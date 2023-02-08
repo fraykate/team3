@@ -4,6 +4,7 @@
 ## Team/Product Name
 ## Team members: list the name, git username, and email for each member.
 * Kate Fray - fraykate - kafr5070@colorado.edu
+* Chris Lescinskas - lescinsc - chle8754@colorado.edu
 ## Weekly Stand-ups: Wednesday @ 6pm MST
 ## Vision statement: what would you tell potential customers?
 ## Motivation: why are you working on this project?
