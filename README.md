@@ -1,8 +1,9 @@
 
 ## Project title (must be something representing your project)
+* Developing, Testing and Deploying a Movie Recommendation Website
 ## Team 3
 ## Team/Product Name
-* Civic Critic, Screentime, whatchawatchin?
+* Civic Critic, Screentime, whatchawatchin?, Move Matchers 
 
 ## Team members: list the name, git username, and email for each member.
 * Kate Fray - fraykate - kafr5070@colorado.edu
