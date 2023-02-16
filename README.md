@@ -3,7 +3,7 @@
 * Developing, Testing and Deploying a Movie Recommendation Website
 ## Team 3
 ## Team/Product Name
-* Civic Critic, Screentime, whatchawatchin?, Move Matchers 
+* whatchawatchin
 
 ## Team members: list the name, git username, and email for each member.
 * Kate Fray - fraykate - kafr5070@colorado.edu
