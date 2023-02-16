@@ -34,8 +34,8 @@ Mitigation Strategy for above risks
 * Asana for communication and task tracking
 * Setting approriate deadlines to ensure timely progress
 * Leveraging skills learned in this class
-## Development method: scrum, kanban, waterfall: with specifics!
-I think either Scrum or Kanban will work for us:
+## Development method: 
+
 - Scrum: We will have two week sprints and with every sprint, we will rotate roles.  We will have standups every week to go over progress and obstacles.  Asana will act as a kanban board.
 
 ## Project Tracking Software
