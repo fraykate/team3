@@ -10,6 +10,7 @@
 * Chris Lescinskas - lescinsc - chle8754@colorado.edu
 * Ray Franco - dudeilovemae - rafr5604@colorado.edu
 * Jun Park - jupa8877 - jupa8877@colorado.edu
+* Marcus Almanza - maal4602 - maal4602@colorado.edu
 
 ## Weekly Stand-ups: Wednesday @ 6pm MST
 ## Vision statement: what would you tell potential customers?
