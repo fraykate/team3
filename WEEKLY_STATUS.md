@@ -20,4 +20,4 @@ We should not check in changes to the database. Only changes to code.
 
 Chris Lescinskas showed his draft of the website in Flask. He has started using CSS to create some formatting. 
 
-[image](https://user-images.githubusercontent.com/10651164/222308063-bd1b9feb-6ea0-4a69-97f8-8cab82a9987d.png)
+![image](https://user-images.githubusercontent.com/10651164/222308063-bd1b9feb-6ea0-4a69-97f8-8cab82a9987d.png)
