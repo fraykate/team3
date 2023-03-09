@@ -37,15 +37,15 @@ Attendees
 
 We should prepare for our next project milestone. We should each take a page and create a card. 
 
-Login/create user page: Pages where users can create accounts or login. 
-User profile page: User profile information 
-Movie results page: Results for a search
-Movie page: Click on a movie to go to a movie title page
+Login/create user page: Pages where users can create accounts or login. <br>
+User profile page: User profile information <br>
+Movie results page: Results for a search <br>
+Movie page: Click on a movie to go to a movie title page <br>
 
 
 Kate will take the movie page and create a card for it.
 
-We should plan to have our card completed by the 15th.
+We should plan to have our card completed by the 15th. <br>
 We can have a wire-frame or hand drawing for next week. 
 
 What type of tests do we need verify rendering of the page? 
