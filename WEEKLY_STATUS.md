@@ -53,11 +53,11 @@ What type of tests do we need verify rendering of the page?
 
 We moved some cards back so we can focus on the next project milestone. 
 
-Ray - login/create user page
-Marcus - user profile
-Jun - Movie results
-Marcus - Main page (already finished)
-Kate - Movie page
+Ray - login/create user page <br>
+Marcus - user profile <br>
+Jun - Movie results <br>
+Marcus - Main page (already finished) <br>
+Kate - Movie page <br>
 
 ![image](https://user-images.githubusercontent.com/10651164/223890724-c6e94d2d-e756-4e57-9923-42e18fa70cb1.png)
 
