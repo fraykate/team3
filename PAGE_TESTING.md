@@ -15,17 +15,27 @@
 
 ## Login Page
 ### Page Description (include a mockup or hand drawn image of the page)
+* This page will allow the user to login. 
 ### Parameters needed for the page
+* None
 ### Data needed to render the page
+* The User's username if logged in.
 ### Link destinations for the page
+* ./login
 ### List of tests for verifying the rendering of the page
+* If the user is already logged in. Redirect to User Profile Page. 
 
 ## Create User Page
 ### Page Description (include a mockup or hand drawn image of the page)
+* This page will allow a user to create a new account. 
 ### Parameters needed for the page
+* None
 ### Data needed to render the page
+* The User's username if logged in.
 ### Link destinations for the page
+* ./create_account
 ### List of tests for verifying the rendering of the page
+* If the user is already logged in. Redirect to User Profile Page. 
 
 ## Movie Results Page
 ### Page Description (include a mockup or hand drawn image of the page)
