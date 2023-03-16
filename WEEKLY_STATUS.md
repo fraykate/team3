@@ -61,4 +61,38 @@ Kate - Movie page <br>
 
 ![image](https://user-images.githubusercontent.com/10651164/223890724-c6e94d2d-e756-4e57-9923-42e18fa70cb1.png)
 
+-------------------------------------------------------------------------------------------------------------------
+
+March 15th 2023
+
+Attendees
+
+- Ray Franco
+- Marcus Almanza
+- Chris Lescinskas
+- Kate Fray
+- Jun-Q
+
+#What we did:
+We went around the table discussing the best practices for parameters and then covered the work we did for each of the individual pages.
+We all completed our tasks on time in order to submit our Project Milestone 4 in a timely manner.
+Marcus set us up with the PAGE_TESTING.MD doc and completed the User profile page framework.
+Ray already got started on the testing framework, completed the User login page framework.
+Chris already got started on the HTML rendering for his page, completed the main page framework.
+Jun worked on and completed the movie results page framework.
+Kate completed the movie details page framework and took meeting minutes.
+
+We also discussed the desired user flow:
+* A User logs in on the log-in page
+* They then land on the main page
+* From there they can make a  genre selection which takes them to the Movie results page
+* They can click on a particular result (Move/Show/Documentary) to go to a movie details page
+* At any point you can navigate home or to your profile page
+
+
+#What we plan to do:
+Next actions are to revise and clean up their submission for the Project Milestone 4 by noon MST the following day.
+
+
+
 
