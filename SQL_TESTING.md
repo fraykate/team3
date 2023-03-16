@@ -44,4 +44,30 @@
   *
   *
   *
-  
+---
+---
+## Access Methods
+### Access 1
+ * Create user
+   * Verify unique user name with corresponding password
+ * Description
+   * Test the create user page
+ * Pre-conditions
+   * User made unique user name with a password
+ * Test Steps
+   1. Navigate to create user page
+   2. Provide valid and unique user name
+   3. Provide valid password
+   4. Click create user button
+ * Expected Result
+   * User had been created and added to the database
+ * Actual Result
+   * Web page displays notification indicating successful user creation
+ * Status
+   * Pass
+ * Notes
+   * N/A
+ * Post-conditions
+   * User is created and added to the database
+ 
+ ### Access 2
