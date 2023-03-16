@@ -107,9 +107,9 @@ Is the data accurate
 Are links are navigating to the correct place
 
 ### List of tests for verifying the rendering of the page
-Is the data displaying
-Is the data accurate
-Are links are navigating to the correct place
+* Other Movie Detail pages
+* Home page
+* User Page
 
 
 ## User Profile Page
