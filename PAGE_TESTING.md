@@ -40,9 +40,13 @@
 ## Movie Results Page
 ### Page Description (include a mockup or hand drawn image of the page)
 ### Parameters needed for the page
+* Entered criteria
 ### Data needed to render the page
+* Movie title, picture(if applicable), actors and actresses'name
 ### Link destinations for the page
+* ./search_result
 ### List of tests for verifying the rendering of the page
+* checking data includes entered criteria
 
 ## Movie Information Page
 ### Page Description (include a mockup or hand drawn image of the page)
@@ -66,7 +70,9 @@
 * List from database of movies they liked
 * List from database of movies they disliked
 ### Link destinations for the page
-* ./username
+* Getting to: Tab on top of the page that goes to user page after logging in
+* Leaving: Movie links that goes to movie page from any of the three different lists of movies
+* Leaving: Tabs on the top of the page to get to other pages
 ### List of tests for verifying the rendering of the page
 * Verify username displayed matches the same username that was used to login 
 * Verify movie lists are displaying correctly at that what's shown matches list in database related to username
