@@ -39,6 +39,7 @@ iv.	Movie category links  Below Site Description
 ## Login Page
 ### Page Description (include a mockup or hand drawn image of the page)
 * This page will allow the user to login. 
+![login_page](https://user-images.githubusercontent.com/10651164/225513221-614dcdc7-2ff2-4b20-944a-c7b6fa177a0d.jpeg)
 ### Parameters needed for the page
 * None
 ### Data needed to render the page
@@ -51,6 +52,7 @@ iv.	Movie category links  Below Site Description
 ## Create User Page
 ### Page Description (include a mockup or hand drawn image of the page)
 * This page will allow a user to create a new account. 
+![create_user_page](https://user-images.githubusercontent.com/10651164/225513271-03b3c953-4f69-4568-bc9b-f8bc58555633.jpeg)
 ### Parameters needed for the page
 * None
 ### Data needed to render the page
