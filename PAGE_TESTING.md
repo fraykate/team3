@@ -81,6 +81,9 @@ iv.	Movie category links  Below Site Description
 ![Screenshot 2023-03-15 at 6 03 19 PM](https://user-images.githubusercontent.com/34926259/225479977-326141e2-4ea3-42ac-b852-ff986ea4c31b.png)
 
 ### Parameters needed for the page
+* Movie ID
+* Recommended Movie ID’s or randomly selected ID’s from a list based on genre
+
 ### Data needed to render the page
 * Movie Title
 * Image address for movie poster
