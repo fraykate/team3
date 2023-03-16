@@ -75,7 +75,10 @@ iv.	Movie category links  Below Site Description
 * checking data includes entered criteria
 
 ## Movie Information Page
-### Page Description (include a mockup or hand drawn image of the page)![Screenshot 2023-03-15 at 6 03 19 PM](https://user-images.githubusercontent.com/34926259/225479977-326141e2-4ea3-42ac-b852-ff986ea4c31b.png)
+### Page Description (include a mockup or hand drawn image of the page)
+* The individual page that describes the details of a chosen film/tv show/documentary/etc.
+
+![Screenshot 2023-03-15 at 6 03 19 PM](https://user-images.githubusercontent.com/34926259/225479977-326141e2-4ea3-42ac-b852-ff986ea4c31b.png)
 
 ### Parameters needed for the page
 ### Data needed to render the page
