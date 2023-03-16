@@ -9,7 +9,7 @@
 ## Main/Home Page
 ### Page Description (include a mockup or hand drawn image of the page)!
 a.	Starting point for the user experience.  Introduce users to the site and direct them towards the site’s functionalities
-[Whatchawatchin HomePage MockUp](https://user-images.githubusercontent.com/78234265/225473516-ebe34cc1-4833-4a84-8afc-5835d919bca2.png)
+![Whatchawatchin HomePage MockUp](https://user-images.githubusercontent.com/78234265/225473516-ebe34cc1-4833-4a84-8afc-5835d919bca2.png)
 
 ### Parameters needed for the page
 a.	None
