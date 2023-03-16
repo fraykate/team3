@@ -60,7 +60,7 @@ iv.	Movie category links  Below Site Description
 ### List of tests for verifying the rendering of the page
 * If the user is already logged in. Redirect to User Profile Page. 
 
-## Movie Results Page
+## Movie/Category Results Page
 ### Page Description (include a mockup or hand drawn image of the page)
 ### Parameters needed for the page
 * Entered criteria
