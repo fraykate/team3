@@ -101,10 +101,11 @@ iv.	Movie category links  Below Site Description
 ** Add to user watch list
 ** Like or dislike
 ** Movie rating
+
 ### Link destinations for the page
-Is the data displaying
-Is the data accurate
-Are links are navigating to the correct place
+* Other Movie Detail pages
+* Home page
+* User Page
 
 ### List of tests for verifying the rendering of the page
 * Is the data displaying
