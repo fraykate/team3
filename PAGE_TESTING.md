@@ -66,9 +66,7 @@
 * List from database of movies they liked
 * List from database of movies they disliked
 ### Link destinations for the page
-* Getting to: Tab on top of the page that goes to user page after logging in
-* Leaving: Movie links that goes to movie page from any of the three different lists of movies
-* Leaving: Tabs on the top of the page to get to other pages
+* ./username
 ### List of tests for verifying the rendering of the page
 * Verify username displayed matches the same username that was used to login 
 * Verify movie lists are displaying correctly at that what's shown matches list in database related to username
