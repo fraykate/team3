@@ -75,6 +75,22 @@ iv.	Movie category links  Below Site Description
 ### Page Description (include a mockup or hand drawn image of the page)
 ### Parameters needed for the page
 ### Data needed to render the page
+* Movie Title
+* Image address for movie poster
+* Genre
+* Release Year
+* Rating
+* Synopsis
+* Full names of 3 cast members
+* Full name of Director
+* Full name of Producer
+* Full name of Writer
+* 3 reviews
+* Titles for 3 similar movies
+** Form inputs include:
+** Add to user watch list
+** Like or dislike
+** Movie rating
 ### Link destinations for the page
 ### List of tests for verifying the rendering of the page
 
