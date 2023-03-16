@@ -98,6 +98,9 @@ iv.	Movie category links  Below Site Description
 ** Like or dislike
 ** Movie rating
 ### Link destinations for the page
+* Other Movie Detail pages
+* Home page
+* User Page
 ### List of tests for verifying the rendering of the page
 
 ## User Profile Page
