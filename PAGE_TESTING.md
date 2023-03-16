@@ -37,7 +37,7 @@
 ### List of tests for verifying the rendering of the page
 * If the user is already logged in. Redirect to User Profile Page. 
 
-## Movie Results Page
+## Movie Details Page
 ### Page Description (include a mockup or hand drawn image of the page)
 ### Parameters needed for the page
 * Entered criteria
@@ -50,9 +50,12 @@
 
 ## Movie Information Page
 ### Page Description (include a mockup or hand drawn image of the page)
+
 ### Parameters needed for the page
 ### Data needed to render the page
 ### Link destinations for the page
+![Movie Details Page][Screenshot 2023-03-15 at 6 03 19 PM](https://user-images.githubusercontent.com/34926259/225473362-c4c7434e-bac7-4ed1-b89e-fba38ad27d49.png)
+
 ### List of tests for verifying the rendering of the page
 
 ## User Profile Page
