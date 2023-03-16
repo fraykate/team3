@@ -73,6 +73,10 @@ iv.	Movie category links  Below Site Description
 
 ## Movie Information Page
 ### Page Description (include a mockup or hand drawn image of the page)
+* The individual page that describes the details of a chosen film/tv show/documentary/etc.
+![Screenshot 2023-03-15 at 6 03 19 PM](https://user-images.githubusercontent.com/34926259/225479209-52b3922c-652d-4706-bc1b-94042e21d61d.png)
+
+
 ### Parameters needed for the page
 * Movie ID
 * Recommended Movie IDs which may be randomly generated from the genre selected, uncertain
