@@ -7,11 +7,34 @@
   * User Profile Page
   
 ## Main/Home Page
-### Page Description (include a mockup or hand drawn image of the page)
+### Page Description (include a mockup or hand drawn image of the page)!
+a.	Starting point for the user experience.  Introduce users to the site and direct them towards the site’s functionalities
+[Whatchawatchin HomePage MockUp](https://user-images.githubusercontent.com/78234265/225473516-ebe34cc1-4833-4a84-8afc-5835d919bca2.png)
+
 ### Parameters needed for the page
+a.	None
 ### Data needed to render the page
+a.	List of movie categories
+b.	Valid link urls
+
 ### Link destinations for the page
+a.	Link to user login/sign up
+b.	Link for each movie category which brings us to the ‘filtering’ page for that category
+c.	Link to user profile page
+
 ### List of tests for verifying the rendering of the page
+
+a.	1 test for each link to verify it brings you to the correct location
+i.	Each movie category link  filtering page for that category
+ii.	Login/sign up  Page which includes the login and sign up forms
+iii.	Profile  page that shows user profile
+b.	1 test to verify background image and color schemes
+c.	1 test to verify position of elements
+i.	Profile/Login/Sign up bar  Fixed to top of page
+ii.	Title  underneath Profile bar
+iii.	Site Description  Below Title
+iv.	Movie category links  Below Site Description
+
 
 ## Login Page
 ### Page Description (include a mockup or hand drawn image of the page)
@@ -37,7 +60,7 @@
 ### List of tests for verifying the rendering of the page
 * If the user is already logged in. Redirect to User Profile Page. 
 
-## Movie Details Page
+## Movie Results Page
 ### Page Description (include a mockup or hand drawn image of the page)
 ### Parameters needed for the page
 * Entered criteria
@@ -50,12 +73,9 @@
 
 ## Movie Information Page
 ### Page Description (include a mockup or hand drawn image of the page)
-
 ### Parameters needed for the page
 ### Data needed to render the page
 ### Link destinations for the page
-![moviedetails](https://user-images.githubusercontent.com/34926259/225473362-c4c7434e-bac7-4ed1-b89e-fba38ad27d49.png)
-
 ### List of tests for verifying the rendering of the page
 
 ## User Profile Page
