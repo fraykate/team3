@@ -76,6 +76,7 @@ Attendees
 # What we did:
 We went around the table discussing the best practices for parameters and then covered the work we did for each of the individual pages.
 We all completed our tasks on time in order to submit our Project Milestone 4 in a timely manner.
+
 Marcus set us up with the PAGE_TESTING.MD doc and completed the User profile page framework.
 Ray already got started on the testing framework, completed the User login page framework.
 Chris already got started on the HTML rendering for his page, completed the main page framework.
@@ -91,7 +92,9 @@ We also discussed the desired user flow:
 
 
 # What we plan to do:
-Next actions are to revise and clean up their submission for the Project Milestone 4 by noon MST the following day.
+Next actions are to revise and clean up submissions for Project Milestone 4 by noon MST the following day.
+
+<img width="719" alt="Screenshot 2023-03-15 at 6 32 26 PM" src="https://user-images.githubusercontent.com/34926259/225479744-d1360187-1525-4a07-8cd1-0a4747d5f43b.png">
 
 
 
