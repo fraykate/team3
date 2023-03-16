@@ -95,7 +95,15 @@ iv.	Movie category links  Below Site Description
 ** Like or dislike
 ** Movie rating
 ### Link destinations for the page
+Is the data displaying
+Is the data accurate
+Are links are navigating to the correct place
+
 ### List of tests for verifying the rendering of the page
+Is the data displaying
+Is the data accurate
+Are links are navigating to the correct place
+
 
 ## User Profile Page
 ### Page Description 
