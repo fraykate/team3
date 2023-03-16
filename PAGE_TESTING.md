@@ -74,6 +74,8 @@ iv.	Movie category links  Below Site Description
 ## Movie Information Page
 ### Page Description (include a mockup or hand drawn image of the page)
 ### Parameters needed for the page
+* Movie ID
+* Recommended Movie IDs which may be randomly generated from the genre selected, uncertain
 ### Data needed to render the page
 * Movie Title
 * Image address for movie poster
