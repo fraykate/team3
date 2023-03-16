@@ -62,6 +62,9 @@ iv.	Movie category links  Below Site Description
 
 ## Movie/Category Results Page
 ### Page Description (include a mockup or hand drawn image of the page)
+![PXL_20230316_003324221](https://user-images.githubusercontent.com/111999240/225479261-34bacec0-597e-4b8d-8eb4-dcafa97e5c9c.jpg)
+
+
 ### Parameters needed for the page
 * Entered criteria
 ### Data needed to render the page
@@ -73,13 +76,7 @@ iv.	Movie category links  Below Site Description
 
 ## Movie Information Page
 ### Page Description (include a mockup or hand drawn image of the page)
-* The individual page that describes the details of a chosen film/tv show/documentary/etc.
-![Screenshot 2023-03-15 at 6 03 19 PM](https://user-images.githubusercontent.com/34926259/225479209-52b3922c-652d-4706-bc1b-94042e21d61d.png)
-
-
 ### Parameters needed for the page
-* Movie ID
-* Recommended Movie IDs which may be randomly generated from the genre selected, uncertain
 ### Data needed to render the page
 * Movie Title
 * Image address for movie poster
@@ -98,13 +95,7 @@ iv.	Movie category links  Below Site Description
 ** Like or dislike
 ** Movie rating
 ### Link destinations for the page
-* Other Movie Detail pages
-* Home page
-* User Page
 ### List of tests for verifying the rendering of the page
-* Is the data displaying
-* Is the data accurate
-* Are links are navigating to the correct place
 
 ## User Profile Page
 ### Page Description 
