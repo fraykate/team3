@@ -97,5 +97,27 @@ Next actions are to revise and clean up submissions for Project Milestone 4 by n
 <img width="719" alt="Screenshot 2023-03-15 at 6 32 26 PM" src="https://user-images.githubusercontent.com/34926259/225479744-d1360187-1525-4a07-8cd1-0a4747d5f43b.png">
 
 
+-------------------------------------------------------------------------------------------------------------------
 
+March 22th 2023
+
+Attendees
+
+- Ray Franco
+- Marcus Almanza
+- Chris Lescinskas
+- Kate Fray
+
+# What we did:
+We went around and discussed what we had done the past week and what we plan on working on for the next one.
+
+Marcus set up the SQL_TESTING.md file in preparation for the next milestone, and added some of the information needed
+Kate worked on drafting the movie database, as well as getting a basis for the html movie information page
+Ray is going to come up with ideas for SQL tests to get ready for the next milestone, with Marcus helping
+Chris is continuing to build the foundation of our home page
+
+# What we plan to do:
+Continue to work on web pages, and work on project milestone 5, as well as setting up our database.
+
+![image](https://user-images.githubusercontent.com/83556347/227069752-c0eb19d9-5f07-454d-b1a1-d58b53cfa8e4.png)
 
