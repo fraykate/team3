@@ -27,6 +27,8 @@
 ### Tests
   * When trying to movie to list check for duplicates
   * Check that movies in LikedMovies aren't in DislikedMovies and visversa
+  * Reference the Login Information table to ensure the user is valid.
+  * Reference the Movies table to ensure the movie is valid. 
   * 
   
 ## Movies
