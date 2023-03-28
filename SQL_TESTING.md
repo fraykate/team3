@@ -10,9 +10,10 @@
   * UserID - unique id for user to be used for login
   * Password - string that will be used to verify a valid login corresponding to username
 ### Tests
-  *
-  *
-  *
+  * When adding to db check that username is unique
+  * Username criteria
+  * Password criteria
+  * 
   
 ## User profile
 ### Table Description
@@ -24,9 +25,9 @@
   * LikedMovies - List of movies that the user has watched and liked
   * DislikedMovies - List of movies that the user has watched and disliked
 ### Tests
-  *
-  *
-  *
+  * When trying to movie to list check for duplicates
+  * Check that movies in LikedMovies aren't in DislikedMovies and visversa
+  * 
   
 ## Movies
 ### Table Description
@@ -41,8 +42,8 @@
   *
   *
 ### Tests
-  *
-  *
+  * MovidID unique
+  * No movie duplicates
   *
 ---
 ---
@@ -71,3 +72,33 @@
    * User is created and added to the database
  
  ### Access 2
+ * Login User
+   * Verifiy login with valid user name and password
+ * Description
+   * Test the login page
+ * Pre-conditions
+   * User has valid user name and password
+ * Test Steps
+   1. Navigate to login page
+   2. Input valid user name
+   3. Input valid password
+   4. Click login button
+ * Expected Result
+   * User has been logged in 
+ * Actual Result
+   * User is navigated to user profile page
+ * Status
+   * Pass
+ * Notes
+   * N/A
+ * Post-conditions
+   * User is validated within database and signed into their account.
+ 
+ ### Access 3
+ * Individual Movie Data
+ 
+ ### Access 4
+ * Movie Search Results
+ 
+ ### Access 5
+ * User Profile Information 
