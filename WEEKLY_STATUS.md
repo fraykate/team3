@@ -33,6 +33,7 @@ Attendees
 - Marcus Almanza
 - Chris Lescinskas
 - Kate Fray
+- Jun-Q
 
 
 We should prepare for our next project milestone. We should each take a page and create a card. 
@@ -121,3 +122,22 @@ Continue to work on web pages, and work on project milestone 5, as well as setti
 
 ![image](https://user-images.githubusercontent.com/83556347/227069752-c0eb19d9-5f07-454d-b1a1-d58b53cfa8e4.png)
 
+-------------------------------------------------------------------------------------------------------------------
+
+March 22th 2023 - Spring Break
+
+Attendees
+
+- Marcus Almanza
+- Chris Lescinskas
+- Jun-Q
+
+
+# What we did:
+Talked about what we have been working. 
+Marcus working on user profile page, and filling out sql milestone information. Jun working on search results page. Chris working on homepage and connecting pages together
+
+# What we plan to do:
+Continue working on the stuff above
+
+![image](https://user-images.githubusercontent.com/83556347/228697526-31be04b5-6d17-4a18-aa3b-9fa472240f8f.png)
