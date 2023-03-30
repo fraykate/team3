@@ -1,0 +1,37 @@
+h1{
+    font-style: italic;
+    font-size: +50px;
+    color:red; 
+    position:absolute; 
+    left:45%; 
+    top:15%
+}
+/* Explore background size variables other than cover*/
+body{
+    
+    background-image: url('Public_domain_theatre.jpg'); background-size:cover;
+}
+table{
+    border: 2px;
+    position:absolute; 
+    left: 20.5%; 
+    top:30%;
+}
+
+th{
+    font-size: +15;
+    color:red; 
+    width: 10%;
+    height: 100px;
+    background-color: blue;
+
+}
+div{
+    border: 20px;
+
+    background-color:blue;
+}
+a{
+    color: red;
+    font-size: +25px;
+}
