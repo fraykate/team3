@@ -3,14 +3,36 @@
 to show the whole page-->
 <head>
     <title>watchawatchin</title>
-    <link rel="stylesheet" href="static/css/mystyle.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/general_format.css') }}">
 </head>
 <body>
+    <div>
+        <a href="login">Login/SignUp</a>
+        <a href="profile">Profile</a>
+        <a href="">Return to Homepage</a>
+    </div>
     <h1>whatchawatchin?</h1>
     <table>
-        <!-- Final just of genres tbd-->
         <th>
-            Action
+            <form action="search/">
+                <button>{{ data[0][0] }}</button>
+            </form>
+            
+        </th>
+        <th>
+            <form action= "search/">
+                <button>{{ data[1][0] }}</button>
+        </th>
+        <th>
+            <form action= "search/">
+                <button>{{ data[2][0] }}</button>
+        </th>
+        <th>
+            <form action= "search/">
+                <button>{{ data[3][0] }}</button>
+        </th>
+        <th>
+            Placeholder
         </th>
     </table>
 </body>
