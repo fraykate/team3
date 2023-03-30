@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!-- Note that mystyle.css and the background image must be downloaded
+to show the whole page-->
+<!-- Demo page for exploring passing variable into route-->
+<head>
+    <title>watchawatchin</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/general_format.css') }}">
+</head>
+<body>
+    <div>
+        <a href="login">Login/SignUp</a>
+        <a href="profile">Profile</a>
+        <a href="../">Return to Homepage</a>
+    </div>
+    
+    <h1>
+        <form action="movie/"  method="Post">
+          <input type="text" placeholder="Search.." name="movie_name">
+          <button type="submit">Submit</button>
+        </form>
+    </h1>
+</body>
