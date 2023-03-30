@@ -33,6 +33,7 @@ Attendees
 - Marcus Almanza
 - Chris Lescinskas
 - Kate Fray
+- Jun-Q
 
 
 We should prepare for our next project milestone. We should each take a page and create a card. 
