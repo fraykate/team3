@@ -21,7 +21,7 @@ import sys
 # of the project database. 
 # If we are running unit tests we should specify another 
 # database. 
-dbname = 'movie_app.db'
+dbname = '../movie_app.db'
 
 # Database structure for reference only:
 #   Tables:
