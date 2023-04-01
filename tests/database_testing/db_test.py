@@ -14,3 +14,6 @@ dbAPI.addLike("ray", 7888, "../../movie_app.db")
 dbAPI.removeLike("ray", 7888, "../../movie_app.db")
 
 
+dbAPI.countLikesByUser("ray", "../../movie_app.db")
+
+dbAPI.countLikesByMovie(7888, "../../movie_app.db")
