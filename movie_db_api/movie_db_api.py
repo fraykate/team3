@@ -63,7 +63,7 @@ def countLikesByUser(username, database = dbname):
 # Parameters: movie_id
 # Returns: number of movie likes
 def countLikesByMovie(movie_id, database = dbname):
-    countGenericByMovie("likes", movie_id, database)
+    return countGenericByMovie("likes", movie_id, database)
 
 # Function: isMovieLikedByUser
 # Description: Checks to see if the user has already liked the movie
@@ -71,7 +71,7 @@ def countLikesByMovie(movie_id, database = dbname):
 # Returns: returns true if the movie has already been liked by the user
 #          otherwise returns false
 def isMovieLikedByUser(username, database = dbname):
-    isMovieGenericByUser("likes", username, database)
+    return isMovieGenericByUser("likes", username, database)
 
 
 #################################
@@ -100,7 +100,7 @@ def countWatchedByUser(username, database = dbname):
 # Parameters: movie_id
 # Returns: number of time a movie has been watched by users
 def countWatchedByMovie(movie_id, database = dbname):
-    countGenericByMovie("watched", movie_id, database)
+    return countGenericByMovie("watched", movie_id, database)
 
 # Function: isMovieWatchedByUser
 # Description: Checks to see if the user has already seen the movie
@@ -108,7 +108,7 @@ def countWatchedByMovie(movie_id, database = dbname):
 # Returns: returns true if the movie has already been seen by the user
 #          otherwise returns false
 def isMovieWatchedByUser(username, database = dbname):
-    isMovieGenericByUser("watched", username, database)
+    return isMovieGenericByUser("watched", username, database)
 
 ## The following code is reused by other functions.
 ## TODO change to scope of these functions so that they 
