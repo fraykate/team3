@@ -31,15 +31,28 @@ dbname = 'movie_app.db'
 #       TBD
 #
 
+
+
 # Function: addLike
 # Description: Records a user's like to the database
 # Parameters: username, movie_id 
-def addLike(username, movie_id, database = dbname)
-    conn = sqlite3.connect(dbname)
+def addLike(username, movie_id, database = dbname):
+    conn = sqlite3.connect(database)
     c = conn.cursor()
 
-    c.exectute("INSERT INTO likes (username, movieid) VALUES (?,?)")
+    c.execute("INSERT INTO likes (username, movieid) VALUES (?,?)", (username, movie_id))
     conn.commit()
     conn.close()
 
+
+# Function: removeLike
+# Description: removes a user's like to the database
+# Parameters: username, movie_id 
+def removeLike(username, movie_id, database = dbname):
+    conn = sqlite3.connect(database)
+    c = conn.cursor()
+
+    c.execute("DELETE FROM likes WHERE username = (?) AND movieid = (?)", (username, movie_id))
+    conn.commit()
+    conn.close()
 
