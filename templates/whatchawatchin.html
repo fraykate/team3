@@ -14,21 +14,23 @@ to show the whole page-->
     <h1>whatchawatchin?</h1>
     <table>
         <th>
-            <form action="search/">
+            <form action= "{{url_for('search_movie')}}">
                 <button>{{ data[0][0] }}</button>
             </form>
             
         </th>
         <th>
-            <form action= "search/">
+            <form action= "{{url_for('search_movie')}}">
                 <button>{{ data[1][0] }}</button>
+            </form>
         </th>
         <th>
-            <form action= "search/">
+            <form action= "{{url_for('search_movie')}}">
                 <button>{{ data[2][0] }}</button>
+            </form>
         </th>
         <th>
-            <form action= "search/">
+            <form action= "{{url_for('search_movie')}}">
                 <button>{{ data[3][0] }}</button>
         </th>
         <th>
