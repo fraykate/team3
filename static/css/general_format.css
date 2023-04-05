@@ -14,15 +14,16 @@ body{
 table{
     border: 2px;
     position:absolute; 
-    left: 20.5%; 
-    top:30%;
+    left: 25vw; 
+    top:15vw;
+    width: 45vw;
+    height:auto;
 }
 
 th{
     font-size: +15;
     color:red; 
-    width: 10%;
-    height: 100px;
+    height: 50px;
     background-color: blue;
 
 }
