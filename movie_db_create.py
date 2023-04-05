@@ -3,7 +3,7 @@
 ##############################################################
 # THIS IS THE FILE FOR CREATING AND FILLING THE DATABASE
 
-# Contributing Authors: Kate Fray
+# Contributing Authors: Kate Fray, Ray Franco
 ##############################################################
 
 import sqlite3
@@ -32,6 +32,20 @@ def create(dbname):
     c.execute("CREATE TABLE titleBasics(tconst VARCHAR PRIMARY KEY, titleType VARCHAR, primaryTitle VARCHAR, originalTitle VARCHAR, isAdult NUMERIC, startYear NUMERIC, endYear NUMERIC, runtimeMinutes NUMERIC, genre1 TEXT DEFAULT 'abc', genre2 TEXT DEFAULT 'abc', genre3 TEXT DEFAULT 'abc');")
 
     # TODO - create the subsequent needed tables
+
+    # Create likes table
+    c.execute("CREATE TABLE likes (username VARCHAR, movieid VARCHAR);")
+
+    # Create dislikes table
+    c.execute("CREATE TABLE dislikes (username VARCHAR, movieid VARCHAR);")
+
+    # Create watched table
+    c.execute("CREATE TABLE watched (username VARCHAR, movieid VARCHAR);")
+
+    # Create to_watch table
+    c.execute("CREATE TABLE to_watch (username VARCHAR, movieid VARCHAR);")
+
+
 
     conn.commit()
     conn.close()

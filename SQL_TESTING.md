@@ -98,9 +98,62 @@
  
  ### Access 3
  * Individual Movie Data
+   * Verify movie informatoin with movie id
+ * Description
+   * Test movie information page
+ * Pre-conditions
+   * Movie information and movie id match
+ * Test Steps
+   * Select movie link
+ * Expected Result
+   * Movie information page filled out
+ * Actual Result
+   * User is navigated to movie information page
+ * Status
+   * Pass
+ * Notes
+   * N/A
+ * Post-conditions
+   * Movie is verified within database and displays information
  
  ### Access 4
  * Movie Search Results
- 
+   * Verify movie search results with matching criteria
+ * Description
+   * Test movie search results page
+ * Pre-conditions
+   * Movie results have matching criteria
+ * Test Steps
+   * Select/input search criteria
+   * Click search/results button
+ * Expected Result
+   * List of movies given
+ * Actual Result
+   * User is navigated to movie search results page
+ * Status
+   * Pass
+ * Notes
+   * N/A
+ * Post-conditions
+   * Movies are verified within database by matching criteria
  ### Access 5
  * User Profile Information 
+   * Verify user profile informatoin
+ * Description
+   * Test user profile page
+ * Pre-conditions
+   * Successful login
+   * User information matched user login
+ * Test Steps
+   * Successfully login
+   * Click user profile page button
+ * Expected Result
+   * User profile page filled out
+ * Actual Result
+   * User is navigated to user profile page
+ * Status
+   * Pass
+ * Notes
+   * N/A
+ * Post-conditions
+   * User profile is verified within database and displays corresponding user information
