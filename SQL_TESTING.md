@@ -45,7 +45,6 @@
 ### Tests
   * MovidID unique
   * No movie duplicates
-  *
 ---
 ---
 ## Access Methods
