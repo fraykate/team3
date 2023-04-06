@@ -3,7 +3,7 @@
   * User profile
   * Movies
 
-## Login Informatoin
+## Login Information
 ### Table Description
   * Table will contain username key and corresponding password that will be used to verify a valid login
 ### Table Columns
