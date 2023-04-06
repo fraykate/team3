@@ -13,23 +13,23 @@
   * When adding to db check that username is unique
   * Username criteria
   * Password criteria
-  * 
   
 ## User profile
 ### Table Description
-  * Table will contain each user's saved movie information
+  * The user profile will be composed of 4 different tables that can be 
+  * queried indiviually or joined together. The tables are: likes, dislikes,
+  * watched, and to_watch
 ### Table Columns
   * IDUser - unique id for user
-  * WatchedMovies - List of movies that the user has already watched
-  * ToWatch - LIst of movies that the user wants to watch
-  * LikedMovies - List of movies that the user has watched and liked
-  * DislikedMovies - List of movies that the user has watched and disliked
+  * WatchedMovie - Movie that the user has already watched
+  * ToWatch - Movie that the user wants to watch
+  * LikedMovies - Movie that the user liked
+  * DislikedMovies - Movie that the user has disliked
 ### Tests
-  * When trying to movie to list check for duplicates
+  * When adding a movie check for duplicates
   * Check that movies in LikedMovies aren't in DislikedMovies and visversa
   * Reference the Login Information table to ensure the user is valid.
   * Reference the Movies table to ensure the movie is valid. 
-  * 
   
 ## Movies
 ### Table Description
@@ -41,8 +41,7 @@
   * Runtime - Length of movie in minutes
   * Langauge - The langauge the movie is in
   * Ratings - The average ratings that users have given it on IMDB
-  *
-  *
+
 ### Tests
   * MovidID unique
   * No movie duplicates
