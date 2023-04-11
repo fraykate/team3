@@ -6,6 +6,7 @@
 ## Login Information
 ### Table Description
   * Table will contain username key and corresponding password that will be used to verify a valid login
+  * It will be used by the log in and create user html pages
 ### Table Columns
   * UserID - unique id for user to be used for login
   * Password - string that will be used to verify a valid login corresponding to username
@@ -19,6 +20,7 @@
   * The user profile will be composed of 4 different tables that can be 
   * queried indiviually or joined together. The tables are: likes, dislikes,
   * watched, and to_watch
+  * It will be used by the user profile html page to view as well as the individual movie html page and search results html page to add values to user when logged in
 ### Table Columns
   * IDUser - unique id for user
   * WatchedMovie - Movie that the user has already watched
@@ -34,6 +36,7 @@
 ## Movies
 ### Table Description
   * Table that will contain movies and movie information
+  * It will be used by individual movie and search results html pages to access information
 ### Table Columns
   * MovieID - Unique id for each movie
   * Title - Name of movie
