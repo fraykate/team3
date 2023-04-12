@@ -9,7 +9,7 @@
 
 # Contributing Authors: Kate Fray
 ##############################################################
-import psycopg2
+
 import prefix
 import sqlite3
 from flask import Flask, url_for, render_template, request
