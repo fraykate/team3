@@ -3,9 +3,10 @@
   * User profile
   * Movies
 
-## Login Informatoin
+## Login Information
 ### Table Description
   * Table will contain username key and corresponding password that will be used to verify a valid login
+  * It will be used by the log in and create user html pages
 ### Table Columns
   * UserID - unique id for user to be used for login
   * Password - string that will be used to verify a valid login corresponding to username
@@ -13,27 +14,29 @@
   * When adding to db check that username is unique
   * Username criteria
   * Password criteria
-  * 
   
 ## User profile
 ### Table Description
-  * Table will contain each user's saved movie information
+  * The user profile will be composed of 4 different tables that can be 
+  * queried indiviually or joined together. The tables are: likes, dislikes,
+  * watched, and to_watch
+  * It will be used by the user profile html page to view as well as the individual movie html page and search results html page to add values to user when logged in
 ### Table Columns
   * IDUser - unique id for user
-  * WatchedMovies - List of movies that the user has already watched
-  * ToWatch - LIst of movies that the user wants to watch
-  * LikedMovies - List of movies that the user has watched and liked
-  * DislikedMovies - List of movies that the user has watched and disliked
+  * WatchedMovie - Movie that the user has already watched
+  * ToWatch - Movie that the user wants to watch
+  * LikedMovies - Movie that the user liked
+  * DislikedMovies - Movie that the user has disliked
 ### Tests
-  * When trying to movie to list check for duplicates
+  * When adding a movie check for duplicates
   * Check that movies in LikedMovies aren't in DislikedMovies and visversa
   * Reference the Login Information table to ensure the user is valid.
   * Reference the Movies table to ensure the movie is valid. 
-  * 
   
 ## Movies
 ### Table Description
   * Table that will contain movies and movie information
+  * It will be used by individual movie and search results html pages to access information
 ### Table Columns
   * MovieID - Unique id for each movie
   * Title - Name of movie
@@ -41,12 +44,10 @@
   * Runtime - Length of movie in minutes
   * Langauge - The langauge the movie is in
   * Ratings - The average ratings that users have given it on IMDB
-  *
-  *
+
 ### Tests
   * MovidID unique
   * No movie duplicates
-  *
 ---
 ---
 ## Access Methods

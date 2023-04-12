@@ -56,7 +56,7 @@ class PrefixMiddleware(object):
         
     def __call__(self, environ, start_response):
 
-        environ['SCRIPT_NAME'] = self.service_prefix + environ['SERVER_PORT']
+        environ['SCRIPT_NAME'] = str(self.service_prefix) + environ['SERVER_PORT']
         #print(f"Setting SCRIPT_NAME to {environ['SCRIPT_NAME']}")
 
         # call the default processing

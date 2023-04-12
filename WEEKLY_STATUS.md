@@ -124,7 +124,7 @@ Continue to work on web pages, and work on project milestone 5, as well as setti
 
 -------------------------------------------------------------------------------------------------------------------
 
-March 22th 2023 - Spring Break
+March 29th 2023 - Spring Break
 
 Attendees
 
@@ -141,3 +141,23 @@ Marcus working on user profile page, and filling out sql milestone information. 
 Continue working on the stuff above
 
 ![image](https://user-images.githubusercontent.com/83556347/228697526-31be04b5-6d17-4a18-aa3b-9fa472240f8f.png)
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+April 6th 2023
+
+Attendees
+
+- Marcus Almanza
+- Chris Lescinskas
+- Jun-Q
+- Ray Franco
+
+# What we did:
+Went over SQL milestone. Ray put together an api to help easily navigate and edit tables. Marcus put togeth sql md file. Chris and Jun working on their respective web pages
+
+# What we plan to do:
+Continue working on individual webpages
+
+![image](https://user-images.githubusercontent.com/83556347/230385849-44ed1724-44d0-4c0f-90f8-6b4fc31cab09.png)
