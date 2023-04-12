@@ -1,12 +1,12 @@
 h1{
     font-style: italic;
     font-size: +50px;
-    color:red; 
+    color:rgb(255, 0, 0); 
     position:absolute; 
     left:45%; 
     top:15%
 }
-/* Explore background size variables other than cover*/
+
 body{
     
     background-image: url('Public_domain_theatre.jpg'); background-size:cover;
@@ -29,10 +29,9 @@ th{
 }
 div{
     border: 20px;
-
-    background-color:blue;
+    width: 25vw;
+    background-color:rgb(0, 0, 0);
 }
 a{
-    color: red;
     font-size: +25px;
 }
