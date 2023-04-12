@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>{{moviename}}</title>
+    <link rel="stylesheet" href="../static/css/myflaskapp.css">
+</head>
+<body>
+<div>
+    <h3>{{ moviename }}<h3>
+        {{message}}
+</div>
+    <br><hr><br>
+<div>
+    Genre: {{ data[0][8] }}
+</div>
+<div>
+    Runtime: {{ data[0][7] }} Minutes
+</div>
+<div>
+    Release Year: {{ data[0][5] }}
+</div>
+
+</body>
+</html>
