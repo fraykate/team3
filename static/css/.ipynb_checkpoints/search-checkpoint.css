@@ -14,8 +14,8 @@
 
 #search {
     float: center;
-    clear: center:
-    margin-top: 100px;
+    clear: center;
+    margin-top: 50px;
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
@@ -27,7 +27,8 @@
 }
 
 #topline {
-    clear: left;
+    clear: center;
+    clear: center;
 }
 
 
