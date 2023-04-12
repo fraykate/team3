@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>Movie Not Found</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/general_format.css') }}">
+</head>
+<body>
+    <div>
+        <a href="login">Login/SignUp</a>
+        <a href="profile">Profile</a>
+        <a href="">Return to Homepage</a>
+    </div>
+    <h1>Movie not Found! <br>
+    <a href="{{url_for('search_movie')}}">Click to return to search page</a></h1>
+</body>

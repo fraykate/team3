@@ -51,7 +51,10 @@ def show_movie_profile():
     fetch = "SELECT * FROM titleBasics WHERE primaryTitle = '" + moviename + "'" 
     c.execute(fetch)
     data = c.fetchall()
-    return render_template("movie_detail.html", moviename=moviename, data=data)
+    if len(data) == 0:
+        return render_template("movie_not_found.html")
+    else:
+        return render_template("movie_detail.html", moviename=moviename, data=data)
 
 
 
