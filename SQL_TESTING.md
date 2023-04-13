@@ -14,6 +14,10 @@
   * When adding to db check that username is unique
   * Username criteria
   * Password criteria
+  * functions (name/paramters)
+### Page Descriptions
+  * The Login page will xyz
+  * In order to validate the data is correct we will xyz
   
 ## User profile
 ### Table Description
