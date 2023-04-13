@@ -11,14 +11,25 @@
   * UserID - unique id for user to be used for login
   * Password - string that will be used to verify a valid login corresponding to username
 ### Tests
-  * When adding to db check that username is unique
-  * Username criteria
-  * Password criteria
-  * functions (name/paramters)
+  * Test 1: Adding User Valid Criteria Check
+    * Use case name: "Valid Entry"
+    * Description: Create a user with a valid user name and password, and add to login information table
+    * Pre-conditions:
+      * The login information table is created
+    * Test Steps
+      * Step 1
+      * Step 2...
+    * Expected Results
+    * Actual Results
+    * Status
+    * Notes
+    * Post conditions
+  * Test 2: Duplicate Username Check
+    * "Insert test case here"
 ### Page Descriptions
   * The Login page will xyz
   * In order to validate the data is correct we will xyz
-  
+---  
 ## User profile
 ### Table Description
   * The user profile will be composed of 4 different tables that can be 
@@ -36,7 +47,7 @@
   * Check that movies in LikedMovies aren't in DislikedMovies and visversa
   * Reference the Login Information table to ensure the user is valid.
   * Reference the Movies table to ensure the movie is valid. 
-  
+---  
 ## Movies
 ### Table Description
   * Table that will contain movies and movie information
