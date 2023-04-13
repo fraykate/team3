@@ -11,21 +11,39 @@
   * UserID - unique id for user to be used for login
   * Password - string that will be used to verify a valid login corresponding to username
 ### Tests
-  * Test 1: Adding User Valid Criteria Check
+  * Test 1: Check for table
+    * Use case name: "Check/Create Table"
+    * Description: Check to see if database contains table for user information
+    * Pre-conditions:
+      * Login information database not created
+    * Test Steps
+      * Check that table exists
+        * If table doesn't exist then make one
+        * If it does exist return that table is present
+    * Expected Results
+      * Login information database exist
+    * Actual Results
+      * Receive message saying database is created or present
+    * Status: Pass
+    * Notes: n/a
+    * Post-conditions: n/a
+  * Test 2: Adding User Valid Criteria Check
     * Use case name: "Valid Entry"
     * Description: Create a user with a valid user name and password, and add to login information table
     * Pre-conditions:
       * The login information table is created
     * Test Steps
-      * Step 1
-      * Step 2...
+      * Check that created username is minimum 3 characters with no white spaces
+      * Check that password is minimum 8 characters with no white spaces
+      * With created username iterate through table to see if username exists
+        * If username doesn't exist add new user and password information to table, otherwise return error 
     * Expected Results
+      * New user added to database
     * Actual Results
-    * Status
-    * Notes
-    * Post conditions
-  * Test 2: Duplicate Username Check
-    * "Insert test case here"
+      * Feedback given that user is added to database
+    * Status: Pass
+    * Notes: n/a
+    * Post conditions: n/a
 ### Page Descriptions
   * The Login page will xyz
   * In order to validate the data is correct we will xyz
@@ -51,6 +69,7 @@
 ## Movies
 ### Table Description
   * Table that will contain movies and movie information
+  * This will a dynamic table, nothing can be added or changed after the initial creation
   * It will be used by individual movie and search results html pages to access information
 ### Table Columns
   * MovieID - Unique id for each movie
