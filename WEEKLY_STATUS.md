@@ -161,3 +161,31 @@ Went over SQL milestone. Ray put together an api to help easily navigate and edi
 Continue working on individual webpages
 
 ![image](https://user-images.githubusercontent.com/83556347/230385849-44ed1724-44d0-4c0f-90f8-6b4fc31cab09.png)
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+April 13th 2023
+
+Attendees
+
+- Marcus Almanza
+- Chris Lescinskas
+- Jun-Q
+- Ray Franco
+- Kate Fray
+
+# What we did:
+Talked about what we had been working on the past week and what we will continue to work on.
+Ray continuing on working with create user/login pages as well as api for navigating/editing databases
+Chris and Kate working on rendering webpage and getting it online
+Jun working on search results page
+Kate working on making movie database and individual movie information page
+Chris working on home page and foundation
+Marcus doing sql_testing.md revisions and user profile page
+All - went over SQL milestone and needed revisions
+
+# What we plan to do:
+Continue working on individual corresponding webpages and getting webpage online and running
+
+![image](https://user-images.githubusercontent.com/83556347/232100052-4248b154-1820-4d44-a54a-16a6e405df32.png)
