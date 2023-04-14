@@ -45,8 +45,9 @@
     * Notes: n/a
     * Post conditions: n/a
 ### Page Descriptions
-  * The Login page will xyz
-  * In order to validate the data is correct we will xyz
+  * The create user page will access/modify the data in this tables, see access 1 on how page will be used to test db
+  * The Login page will access the data in this table, see access 2 on how page will be used to test db
+  
 ---  
 ## User profile
 ### Table Description
@@ -135,6 +136,9 @@
     * Status: Pass
     * Notes: n/a
     * Post conditions: n/a
+### Page Descriptions
+  * The user profile page will access/modify the data in this tables, see access 5 on how page will be used to test db
+  
 ---  
 ## Movies
 ### Table Description
@@ -165,6 +169,9 @@
     * Status: Pass
     * Notes: n/a
     * Post conditions: n/a
+### Page Descriptions
+  * The individual movie information pages will access/modify the data in this tables, see access 3 on how page will be used to test db
+  * The search results page will access the data in this table, see access 4 on how page will be used to test db
 ---
 ---
 ## Access Methods
@@ -256,7 +263,7 @@
    * Movies are verified within database by matching criteria
  ### Access 5
  * User Profile Information 
-   * Verify user profile informatoin
+   * Verify user profile information
  * Description
    * Test user profile page
  * Pre-conditions
