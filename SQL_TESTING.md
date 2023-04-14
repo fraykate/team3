@@ -61,10 +61,82 @@
   * LikedMovies - Movie that the user liked
   * DislikedMovies - Movie that the user has disliked
 ### Tests
-  * When adding a movie check for duplicates
-  * Check that movies in LikedMovies aren't in DislikedMovies and visversa
   * Reference the Login Information table to ensure the user is valid.
   * Reference the Movies table to ensure the movie is valid. 
+  * Test 1: Check user profile is valid
+    * Use case name: "Valid Profile"
+    * Description: When in profile page check that a valid user is logged in
+    * Pre-conditions:
+      * User is logged in
+      * Login information table is present
+      * User profile table is present
+    * Test Steps
+      * Iterate through Login information table and profile table
+      * Check to see user is present in both tables
+        * If user isn't present return error message, otherwise continue to profile page
+    * Expected Results
+      * User profile present
+    * Actual Results
+      * User able to go into profile page
+    * Status: Pass
+    * Notes: n/a
+    * Post conditions: n/a
+  * Test 2: Check for Valid Movie
+    * Use case name: "Valid Movie"
+    * Description: Before adding movie to Liked or Disliked Table check that the movie matches a movie in database
+    * Pre-conditions:
+      * User is logged in
+      * Movie database present
+    * Test Steps
+      * Iterate through movie table and check to see if movie is matches id in database
+        * If movie not present return error, if present continue to intended action ()
+    * Expected Results
+      * Movie present
+    * Actual Results
+      * Log that movie is present in database
+    * Status: Pass
+    * Notes: n/a
+    * Post conditions: n/a
+  * Test 3: Adding Movie to LikedMovies table
+    * Use case name: "Added Liked Movie"
+    * Description: Add movie to user profiles LikedMovies Table
+    * Pre-conditions:
+      * User is logged in
+      * User profile table is present
+    * Test Steps
+      * Iterate through user's LikedMovies and DislikedMovies Table
+      * Check to see if movie is present in either list
+        * If movie doesn't exist in either list add to LikedMovies table
+        * If movie exists in DislikedMovies table
+          * Delete movie from Disliked Movies, add to LikedMovies and return moved from disliked to liked message
+        * If movie exists in LikedMovies table return movie already in table error
+    * Expected Results
+      * Movie added to LikedTable
+    * Actual Results
+      * Feedback given that movie is added to LikedMovies
+    * Status: Pass
+    * Notes: n/a
+    * Post conditions: n/a
+  * Test 4: Adding Movie to DislikedMovies table
+    * Use case name: "Added Disliked Movie"
+    * Description: Add movie to user profiles DislikedMovies Table
+    * Pre-conditions:
+      * User is logged in
+      * User profile table is present
+    * Test Steps
+      * Iterate through user's LikedMovies and DislikedMovies Table
+      * Check to see if movie is present in either list
+        * If movie doesn't exist in either list add to DislikedMovies table
+        * If movie exists in LikedMovies table
+          * Delete movie from Liked Movies, add to DislikedMovies and return moved from liked to disliked message
+        * If movie exists in DisikedMovies table return movie already in table error
+    * Expected Results
+      * Movie added to DislikedTable
+    * Actual Results
+      * Feedback given that movie is added to DislikedMovies
+    * Status: Pass
+    * Notes: n/a
+    * Post conditions: n/a
 ---  
 ## Movies
 ### Table Description
@@ -80,8 +152,21 @@
   * Ratings - The average ratings that users have given it on IMDB
 
 ### Tests
-  * MovidID unique
-  * No movie duplicates
+  * Test 1: Check for Movie Duplicates
+    * Use case name: "No Duplicates"
+    * Description: Check to see if there are any duplicate movie ids
+    * Pre-conditions:
+      * The movie database table is created
+    * Test Steps
+      * Iterate through movie ids
+        * If duplicates exist delete the ones after the first one found, otherwise return no duplicates 
+    * Expected Results
+      * No duplicates found
+    * Actual Results
+      * Log that there are no duplicates/movie database is good
+    * Status: Pass
+    * Notes: n/a
+    * Post conditions: n/a
 ---
 ---
 ## Access Methods
