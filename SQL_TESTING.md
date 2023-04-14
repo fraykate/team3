@@ -61,8 +61,6 @@
   * LikedMovies - Movie that the user liked
   * DislikedMovies - Movie that the user has disliked
 ### Tests
-  * Reference the Login Information table to ensure the user is valid.
-  * Reference the Movies table to ensure the movie is valid. 
   * Test 1: Check user profile is valid
     * Use case name: "Valid Profile"
     * Description: When in profile page check that a valid user is logged in
