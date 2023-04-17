@@ -74,6 +74,50 @@ def isMovieLikedByUser(username, database = dbname):
     return isMovieGenericByUser("likes", username, database)
 
 
+################################
+## Functions for dislikes table ###
+################################
+
+# Function: addDislike
+# Description: Records a user's dislike to the database
+# Parameters: username, movie_id 
+# Returns: Nothing
+def addDislike(username, movie_id, database = dbname):
+    addGeneric("dislikes", username, movie_id, database)
+
+
+# Function: removeDisike
+# Description: removes a user's dislike from the database
+# Parameters: username, movie_id 
+# Returns: Nothing
+def removeDisike(username, movie_id, database = dbname):
+    removeGeneric("dislikes", username, movie_id, database)
+
+
+# Function: countDislikesByUser
+# Description: Counts the total number of dislikes for a user
+# Parameters: username
+# Returns: number of user dislikes
+def countDislikesByUser(username, database = dbname):
+    return countGenericByUser("dislikes", username, database)
+
+# Function: countDislikesByMovie
+# Description: Counts the total number of dislikes for a movie
+# Parameters: movie_id
+# Returns: number of movie dislikes
+def countDislikesByMovie(movie_id, database = dbname):
+    return countGenericByMovie("dislikes", movie_id, database)
+
+# Function: isMovieDislikedByUser
+# Description: Checks to see if the user has already disliked the movie
+# Parameters: username, movie_id
+# Returns: returns true if the movie has already been disliked by the user
+#          otherwise returns false
+def isMovieDislikedByUser(username, database = dbname):
+    return isMovieGenericByUser("dislikes", username, database)
+
+
+
 #################################
 ## Functions for watched table ##
 #################################
