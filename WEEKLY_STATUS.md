@@ -189,3 +189,27 @@ All - went over SQL milestone and needed revisions
 Continue working on individual corresponding webpages and getting webpage online and running
 
 ![image](https://user-images.githubusercontent.com/83556347/232100052-4248b154-1820-4d44-a54a-16a6e405df32.png)
+
+-------------------------------------------------------------------------------------------------------------------
+
+April 19th 2023
+
+Attendees
+
+- Marcus Almanza
+- Chris Lescinskas
+- Jun-Q
+- Ray Franco
+- Kate Fray
+
+# What we did:
+Jun - Worked on the search page, added images and like buttons for the search page.
+Marcus - Redid the SQL milestones, working on the user profile page, added a few functions to interact with likes and dislikes. Tie it to Movie Database.
+Kate - refactored code for the main application file
+Chris - worked on the testing file - started learning and integrating selenium into the testing framework - search criteria.
+Ray - worked on functions for likes/dislikes/counting and adding new data to the Movie Database.
+
+# What we did:
+The website is live and we are continuing to flesh out the visual components and HTML. We have a few tests but will continue to add. We still need to complete documentation. See the screenshot for our current and complete tasks:
+
+![Image](https://user-images.githubusercontent.com/34926259/233227533-7e1f27a7-c57c-4380-957a-a823ac7bdfaa.png)
