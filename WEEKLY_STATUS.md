@@ -203,13 +203,13 @@ Attendees
 - Kate Fray
 
 # What we did:
-Jun - Worked on the search page, added images and like buttons for the search page.
-Marcus - Redid the SQL milestones, working on the user profile page, added a few functions to interact with likes and dislikes. Tie it to Movie Database.
-Kate - refactored code for the main application file
-Chris - worked on the testing file - started learning and integrating selenium into the testing framework - search criteria.
-Ray - worked on functions for likes/dislikes/counting and adding new data to the Movie Database.
+* Jun - Worked on the search page, added images and like buttons for the search page.
+* Marcus - Redid the SQL milestones, working on the user profile page, added a few functions to interact with likes and dislikes. Tie it to Movie Database.
+* Kate - refactored code for the main application file
+* Chris - worked on the testing file - started learning and integrating selenium into the testing framework - search criteria.
+* Ray - worked on functions for likes/dislikes/counting and adding new data to the Movie Database.
 
-# What we did:
+# What we Plan to do:
 The website is live and we are continuing to flesh out the visual components and HTML. We have a few tests but will continue to add. We still need to complete documentation. See the screenshot for our current and complete tasks:
 
 ![Image](https://user-images.githubusercontent.com/34926259/233227533-7e1f27a7-c57c-4380-957a-a823ac7bdfaa.png)
