@@ -25,15 +25,37 @@ to show the whole page-->
     <div style="padding-top:30px;">
         
         <script>
-        var count =(function () {
+        var count1 =(function () {
+            
+            var counter = 276;
+            return function () {return counter +=1;}
+        })();
+            
+        var count2 =(function () {
+            
+            var counter = 52;
+            return function () {return counter +=1;}
+        })();
+            
+        var count3 =(function () {
             
             var counter = 133;
             return function () {return counter +=1;}
         })();
-        function displaycount(){
-        document.getElementById("carrier1").innerHTML = count();
-            document.getElementById("carrier2").innerHTML = count();
-            document.getElementById("carrier3").innerHTML = count();
+            
+        function displaycount1(){
+            document.getElementById("carrier1").innerHTML = count1();
+            
+        }
+            
+        function displaycount2(){
+            document.getElementById("carrier2").innerHTML = count2();
+           
+        }
+            
+        function displaycount3(){
+            
+            document.getElementById("carrier3").innerHTML = count3();
         }
     </script>
     
@@ -44,8 +66,8 @@ to show the whole page-->
             <li class="show" id="1">
                 <h3 class="show-name"><a href="#">Titanic</a></h3>
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdPugWzSnX3TWCYO-KlF4f5VF2JeMp6VGdAi2lQTLzsqHq00dW" width="200" height="240" alt="movie-poster" class="movie-poster">
-                <p id="carrier1" align="center" style="color:white"> 133 </p>
-                    <button onclick="displaycount()"> <span style="color:red;">&#x2764;</span> </button>
+                <p id="carrier1" align="center" style="color:white"> 276 </p>
+                    <button onclick="displaycount1()"> <span style="color:red;">&#x2764;</span> </button>
         
   
                     
@@ -56,15 +78,15 @@ to show the whole page-->
                 <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQM9YY9AbVVgoSidhtjMBQfHqIKCSThXIj2qKQ_GNXe2AeoxWWh" width="200" height="240" alt="movie-poster" class="movie-poster">
                 <div class="show-btns">
                     
-                    <button onclick="displaycount()"> <span style="color:red;">&#x2764;</span> </button>
-                    <p id="carrier2" align="center" style="color:white"> 133 </p>
+                    <button onclick="displaycount2()"> <span style="color:red;">&#x2764;</span> </button>
+                    <p id="carrier2" align="center" style="color:white"> 52 </p>
                 </div>
             </li>
             <li class="show" id="3">
                 <h3 class="show-name"><a href="#">twilight</a></h3>
                 <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS138xY8fb6CCCYjvYs1weViO97_HoTUZYUgo_8m4l46rnCZBRL" width="200" height="240" alt="movie-poster" class="movie-poster">
                 <div class="show-btns">
-                    <button onclick="displaycount()"> <span style="color:red;">&#x2764;</span> </button>
+                    <button onclick="displaycount3()"> <span style="color:red;">&#x2764;</span> </button>
                     <p id="carrier3" align="center" style="color:white"> 133 </p>
                 </div>
             </li>
