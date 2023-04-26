@@ -56,7 +56,35 @@ def show_movie_profile():
     else:
         return render_template("movie_detail.html", moviename=moviename, data=data)
 
-
+# reads database for corresponding user
+@app.route('/profile')
+def user_profile():
+    file = "movie_app.db"
+    user = "user1"
+    conn = sqlite3.connect(file)
+    cur = conn.cursor()
+    
+    user_likes = []
+    user_dislikes = []
+    user_watched = []
+    user_towatch = []
+    
+    for likesid in cur.execute("SELECT Likes FROM likes WHERE IDUser='"+ user +"';"):
+        #for like_movie_name in cur.execute("SELECT title FROM movies WHERE MovieID='" + likes + "';"):
+        user_likes.append(likesid) #, like_movie_name)
+    
+    for dislikesid in cur.execute("SELECT Dislikes FROM dislikes WHERE IDUser='"+ user +"';"):
+        user_dislikes.append(dislikesid)
+        
+    for watchedid in cur.execute("SELECT Watched FROM watched WHERE IDUser='"+ user +"';"):
+        user_watched.append(watchedid)
+        
+    for towatchid in cur.execute("SELECT ToWatch FROM toWatch WHERE IDUser='"+ user +"';"):
+        user_towatch.append(towatchid)
+        
+    conn.close
+    return render_template('userprofile.html', user_likes = user_likes, user_dislikes = user_dislikes, user_watched = user_watched, user_towatch = user_towatch)
+    
 
 ###############################################################################
 # main driver function
