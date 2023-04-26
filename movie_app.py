@@ -60,7 +60,7 @@ def show_movie_profile():
 @app.route('/profile')
 def user_profile():
     file = "movie_app.db"
-    user = "user1"
+    user = "admin"
     conn = sqlite3.connect(file)
     cur = conn.cursor()
     
