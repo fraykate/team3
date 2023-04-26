@@ -31,8 +31,6 @@ def create(dbname):
     # Create the titleBasics table
     c.execute("CREATE TABLE titleBasics(tconst VARCHAR PRIMARY KEY, titleType VARCHAR, primaryTitle VARCHAR, originalTitle VARCHAR, isAdult NUMERIC, startYear NUMERIC, endYear NUMERIC, runtimeMinutes NUMERIC, genre1 TEXT DEFAULT 'abc', genre2 TEXT DEFAULT 'abc', genre3 TEXT DEFAULT 'abc');")
 
-    # TODO - create the subsequent needed tables
-
     # Create likes table
     c.execute("CREATE TABLE likes (username VARCHAR, movieid VARCHAR);")
 
@@ -44,6 +42,9 @@ def create(dbname):
 
     # Create to_watch table
     c.execute("CREATE TABLE to_watch (username VARCHAR, movieid VARCHAR);")
+
+    # Create Login table
+    c.execute("CREATE TABLE login (username VARCHAR, password VARCHAR)")
 
 
 
@@ -65,6 +66,12 @@ def fill(dbname):
     # Importing the contents of the file into the table
     c.executemany(insert_records, contents)
     
+    # close file
+    file.close()
+
+    # Let's add at least on user for now;
+    c.execute("INSERT INTO login (username, password) VALUES ('admin', 'password')")
+
     conn.commit()
     conn.close()
 
@@ -86,7 +93,11 @@ def main():
     fill(dbname)
     #  addUser(dbname,productName, price, categoryID, description)
 
-main()
+## only call main if this file is run directly 
+## otherwise skip main so it can be imported in other 
+## python scripts
+if __name__ == "__main__":
+    main()
 
 
 

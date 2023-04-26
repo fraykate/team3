@@ -154,6 +154,15 @@ def countWatchedByMovie(movie_id, database = dbname):
 def isMovieWatchedByUser(username, database = dbname):
     return isMovieGenericByUser("watched", username, database)
 
+
+#################################
+## Functions for login table ##
+#################################
+
+# Function: addUser
+def addWatched(username, password, database = dbname):
+    addGeneric("login", username, password, database)
+
 ## The following code is reused by other functions.
 ## TODO change to scope of these functions so that they 
 ## can only be used by functions in this file.
