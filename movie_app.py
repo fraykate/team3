@@ -25,7 +25,7 @@ c = conn.cursor()
 
 # Insert the wrapper for handling PROXY when using csel.io virtual machine
 # Calling this routine will have no effect if running on local machine
-# prefix.use_PrefixMiddleware(app)   
+prefix.use_PrefixMiddleware(app)   
 
 @app.route('/')  
 def homepage():
@@ -84,7 +84,13 @@ def user_profile():
         
     conn.close
     return render_template('userprofile.html', user_likes = user_likes, user_dislikes = user_dislikes, user_watched = user_watched, user_towatch = user_towatch)
-    
+
+
+#Login placeholder 
+@app.route('/login')
+def login():
+    return "login"
+     
 
 ###############################################################################
 # main driver function
