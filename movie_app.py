@@ -89,7 +89,7 @@ def user_profile():
 #Login placeholder 
 @app.route('/login')
 def login():
-    return "login"
+    return 'login'
      
 
 ###############################################################################
