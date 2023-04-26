@@ -1,44 +1,112 @@
 <!DOCTYPE html>
+<!--
+Template displays user profile page
+
+Reads in liked, disliked, watched, 
+and to watch movies corresponding to username
+
+-->
 <html>
 <head>
     <link href="static/css/user.css" rel="stylesheet"/>
-    <title>Username</title>
+    <title>User Profile</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 <body>
-    <div>top tabs/link to other pages</div>
+    <div>
+        <a href="login">Login/SignUp</a>
+        <a href="profile">Profile</a>
+        <a href="">Return to Homepage</a>
+    </div>
     <br>
     <h1>-Username Here-</h1>
     <br><br>
-    <div id="watch_list">
-        <h2>Watch List</h2>
-        <div id="watch1">
+    
+    <div class="row">
+        <div id="to_watch" class="column" style="background-color:#bbb;">
+            <h2>Watch List</h2>
             <p>
-                <a href="">Watch Movie 1</a>
+            <ul>
+                {% if user_watched %}
+                {% for item in user_watched %}
+                <li>{{item[0]}}
+                    <!--
+                    <button type="button">Watched</button>
+                    <button type="button">Like</button>
+                    <button type="button">Dislike</button>
+                    <button type="button">Remove</button>
+                    -->
+                </li>
+                {% endfor %}
+                {% else %}
+                <p>None</p>
+                {% endif %}
+            </ul>
             </p>
         </div>
-        <div id="watch2">
+        <div id="liked_movies" class="column" style="background-color:#ccc;">
+            <h2>Liked Movies</h2>
             <p>
-                <a href="">Watch Movie 2</a>
+            <ul>
+                {% if user_likes %}
+                {% for item in user_likes %}
+                <li>{{item[0]}}
+                    <!--
+                    <button type="button">Dislike</button>
+                    <button type="button">Remove</button>
+                    -->
+                </li>
+                {% endfor %}
+                {% else %}
+                <p>None</p>
+                {% endif %}
+            </ul>      
+            </p>
+        </div>
+        <div id="disliked_movies" class="column" style="background-color:#bbb;">
+            <h2>Disliked Movies</h2>
+            <p>
+            <ul>
+                {% if user_dislikes %}
+                {% for item in user_dislikes %}
+                <li>{{item[0]}}
+                    <!--
+                    <button type="button">Like</button>
+                    <button type="button">Remove</button>
+                    -->
+                </li>
+                {% endfor %}
+                {% else %}
+                <p>None</p>
+                {% endif %}
+            </ul>
             </p>
         </div>
     </div>
-    
-    <div id="liked_list">
-        <h2>Liked List</h2>
-        <div id="like1">
-            <p>
-                <a href="">Liked Movie 1</a>        
-            </p>
-        </div>
-    </div>
-    
-    <div id="disliked_list">
-        <h2>Disliked List</h2>
-        <div id="dislike1">
-            <p>
-                <a href="">Disliked Movie 1</a> 
-            </p>
-        </div>
+    <br><br>
+    <div id="watched_movies" style="background-color:#aaa;">
+        <h2>Watched Movies</h2>
+        <p>
+            <ul>
+                {% if user_watched %}
+                {% for item in user_watched %}
+                <li>{{item[0]}}
+                    <!--
+                    <button type="button">Like</button>
+                    <button type="button">Dislike</button>
+                    <button type="button">Remove</button>
+                    -->
+                </li>
+                {% endfor %}
+                {% else %}
+                <p>None</p>
+                {% endif %}
+            </ul>
+        </p>
     </div>
 </body>
 </html>
