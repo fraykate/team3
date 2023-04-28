@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-    <title>{{moviename}}</title>
-    <link rel="stylesheet" href="../static/css/myflaskapp.css">
-</head>
+    <head>
+        <title>{{moviename}}</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/movie_detail_format.css') }}">
+    </head>
+    <body>
+        <div>
+            <a href="{{url_for('login')}}">Login/SignUp</a>
+            <hr>
+            <a href="{{url_for('user_profile')}}">Profile</a>
+            <hr>
+            <a href="">Return to Homepage</a>
+        </div>
 <body>
 <div>
-    <h3>{{ moviename }}<h3>
-        {{message}}
+    <h1>{{ moviename }}</h1>
 </div>
     <br><hr><br>
 <div>
-    Genre: {{ data[0][8] }}
+    <h3>
+        <img src="https://m.media-amazon.com/images/I/811lT7khIrL._SY445_.jpg"/>
+    </h3>
 </div>
-<div>
-    Runtime: {{ data[0][7] }} Minutes
-</div>
-<div>
-    Release Year: {{ data[0][5] }}
+<div id="div-2">
+    <h3>
+        Genre: {{ data[0][8] }}<br>
+        Runtime: {{ data[0][7] }} Minutes<br>
+        Release Year: {{ data[0][5] }}<br>
+    </h3>
 </div>
 
 </body>

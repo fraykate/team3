@@ -57,7 +57,7 @@ def fill(dbname):
     c = conn.cursor()
     
     # FILL THE titleBasics TABLE (right now it's pointing at a dummy file)
-    file = open('data/dummymovies.csv')
+    file = open('data/movies.csv')
     contents = csv.reader(file)
     
     # TODO - Part of the issue with varying columns in csv file, still a WIP
