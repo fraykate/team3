@@ -6,30 +6,26 @@ to show the whole page-->
     <title>watchawatchin</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/general_format.css') }}">
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    
+    
+    
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/search.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/likebutton.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='Javascript/likebutton.js') }}">
+    
     
 </head>
 <body>
-    <div id="menu">
+    <div>
         <a href="login">Login/SignUp</a>
         <a href="profile">Profile</a>
         <a href="../">Return to Homepage</a>
     </div>
-    
-    <div id="topline">
-        <hr style="width:100%;text-align:left;margin-left:0">
-    </div>
-    
-    <div id="search">
-        
-            <form action="movie/"  method="Post">
-              <input type="text" placeholder="Search.." name="movie_name">
-              <button type="submit">Submit</button>
-            </form>
-        
+    <div>
+    <h1>
+        <form action="movie/"  method="Post">
+          <input type="text" placeholder="Search.." name="movie_name">
+          <button type="submit">Submit</button>
+        </form>
+    </h1>
     </div>
     
     <div style="padding-top:30px;">
@@ -71,17 +67,22 @@ to show the whole page-->
     
     
     
-    <section>
+    
+        
+    </div>
+</body>
+
+<section>
         <ul id="all-shows" style="display: grid;">
             <li class="show" id="1">
                 <h3 class="show-name"><a style="text-decoration:none" href="{{ url_for('titanic') }}">Titanic</a></h3>
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdPugWzSnX3TWCYO-KlF4f5VF2JeMp6VGdAi2lQTLzsqHq00dW" width="200" height="240" alt="movie-poster" class="movie-poster">
-                <div>
-                    <div style="float:left;">
+                <div class="show_btn" style="width: 200px background: #0a2239;">
+                    <div class="love_btn"style="float:left;">
                     <button onclick="displaycount1()"> <span style="color:red; float:left;">&#x2764; love it</span> </button>
                     </div>
-                    <div style="float:left; padding-left:10px;">
-                    <p id="carrier1"  style="color:white; float:left;"> 276 </p>
+                    <div class="counter" style="width: 50px background: #0a2239; float:left; padding-left:10px;">
+                    <p id="carrier1"  style="width: 250px background: #0a2239; color:white; float:left;"> 276 </p>
                     </div>
                     
                 </div>
@@ -92,11 +93,11 @@ to show the whole page-->
             <li class="show" id="2">
                 <h3 class="show-name"><a href="{{ url_for('alfie') }}" style="text-decoration:none">Alfie</a></h3>
                 <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQM9YY9AbVVgoSidhtjMBQfHqIKCSThXIj2qKQ_GNXe2AeoxWWh" width="200" height="240" alt="movie-poster" class="movie-poster">
-                <div>
-                    <div style="float:left;">
+                <div class="show_btn" style="width: 200px background: #0a2239;">
+                    <div class="love_btn" style="float:left;">
                     <button onclick="displaycount2()"> <span style="color:red; float:left;">&#x2764; love it</span> </button>
                     </div>
-                    <div style="float:left; padding-left:10px;">
+                    <div class="counter" style="float:left; padding-left:10px;">
                     <p id="carrier2"  style="color:white; float:left;"> 53 </p>
                     </div>
                     
@@ -105,11 +106,11 @@ to show the whole page-->
             <li class="show" id="3">
                 <h3 class="show-name"><a href="{{ url_for('twilight') }}" style="text-decoration:none">twilight</a></h3>
                 <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS138xY8fb6CCCYjvYs1weViO97_HoTUZYUgo_8m4l46rnCZBRL" width="200" height="240" alt="movie-poster" class="movie-poster">
-                <div>
-                    <div style="float:left;">
+                <div class="show_btn" style="width: 200px background: #0a2239;">
+                    <div class="love_btn" style="float:left;">
                     <button onclick="displaycount3()"> <span style="color:red; float:left;">&#x2764; love it</span> </button>
                     </div>
-                    <div style="float:left; padding-left:10px;">
+                    <div class="counter" style="float:left; padding-left:10px;">
                     <p id="carrier3"  style="color:white; float:left;"> 133 </p>
                     </div>
                     
@@ -117,6 +118,3 @@ to show the whole page-->
             </li>
         </ul>
     </section>
-        
-    </div>
-</body>

@@ -32,3 +32,26 @@
   height: 240px;
 }
 
+.show_btn {
+    
+  width: 180px;
+  display: grid;
+  grid-template-columns: 10px 10px auto;
+  background: #0a2239;
+  align-items: center;
+  column-gap: 10px;
+  padding: 10px;
+}
+
+.love_btn{
+  width: 68px;
+  height: 20px;
+  float:left;
+}
+
+.counter{
+  width: 50px;
+  background: #0a2239;
+  float: center;
+  margin-left: 50px;
+}
