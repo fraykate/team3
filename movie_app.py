@@ -90,6 +90,20 @@ def user_profile():
 @app.route('/login')
 def login():
     return 'login'
+# Movie detail page for titanic
+@app.route('/search/movie/titanic')
+def titanic():
+    return render_template("search.html")
+
+# Movie detail page for Alfie
+@app.route('/search/movie/alfie')
+def alfie():
+    return render_template("search.html")
+
+# Movie detail page for twilight
+@app.route('/search/movie/twilight')
+def twilight():
+    return render_template("search.html")
      
 
 ###############################################################################
