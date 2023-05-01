@@ -40,7 +40,7 @@ def homepage():
 #Eventually this will be replaced by genre 
 @app.route('/search/')
 def search_movie():
-    return render_template("search.html")
+    return render_template("search1.html")
 
 
 @app.route('/search/movie/', methods=['POST', 'GET'])
@@ -53,6 +53,17 @@ def show_movie_profile():
     data = c.fetchall()
     return render_template("movie_detail.html", moviename=moviename, data=data)
 
+@app.route('/search/movie/titanic')
+def titanic():
+    return render_template("movie_detail_titanic.html")
+
+@app.route('/search/movie/alfie')
+def alfie():
+    return render_template("movie_detail_Alfie.html")
+
+@app.route('/search/movie/twilight')
+def twilight():
+    return render_template("movie_detail_twilight.html")
 
 
 ###############################################################################

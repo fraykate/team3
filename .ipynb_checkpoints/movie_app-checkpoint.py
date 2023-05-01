@@ -9,10 +9,10 @@
 
 # Contributing Authors: Kate Fray
 ##############################################################
-
+import psycopg2
 import prefix
 import sqlite3
-from flask import Flask, url_for, render_template
+from flask import Flask, url_for, render_template, request
 from markupsafe import escape
 
 
@@ -27,33 +27,43 @@ c = conn.cursor()
 # Calling this routine will have no effect if running on local machine
 prefix.use_PrefixMiddleware(app)   
 
-# THIS IS A DUMMY INDEX PAGE
-# TODO - Chris I don't know if we want to add my route to your file or yours to this, we can figure that out
 @app.route('/')  
-def index():
-    resp =  ''' 
-            <html>
-            <link rel="stylesheet" href="static/css/myflaskapp.css">
-             <div>
-                 Watchawatchin?!
-            </div><br><hr><br>
-            Top Selling Movie:
-             '''
-    # TODO - We will need to figure out how to handle passing the searched movie into the moviename variable
-    movie_url = url_for("show_movie_profile", moviename='Twilight')
-    resp +=  '<a href="' + movie_url + '" > Twilight</a>'
-    return resp
+def homepage():
+    fetch = "SELECT genre1 FROM titleBasics LIMIT 4"
+    c.execute(fetch)
+    data = c.fetchall()
+    return render_template('whatchawatchin.html', data=data)
 
-# THIS IS THE ROUTE FOR THE MOVIE DETAILS PAGE
-# TODO - How to use this route from another page, probably the movie category page
-# TODO - Need to pass a user selection into <moviename>
-@app.route('/<moviename>')
-def show_movie_profile(moviename):
+
+
+#This is meant to be a dummy page to explore passing variable into route
+#Eventually this will be replaced by genre 
+@app.route('/search/')
+def search_movie():
+    return render_template("search1.html")
+
+
+@app.route('/search/movie/', methods=['POST', 'GET'])
+def show_movie_profile():
+    moviename = request.form['movie_name']
+    ## How do we handle movies that aren't in databse?
+    ## How do we handle movies with the same name?
     fetch = "SELECT * FROM titleBasics WHERE primaryTitle = '" + moviename + "'" 
     c.execute(fetch)
     data = c.fetchall()
     return render_template("movie_detail.html", moviename=moviename, data=data)
 
+@app.route('/search/movie/titanic')
+def titanic():
+    return render_template("movie_detail_titanic.html")
+
+@app.route('/search/movie/alfie')
+def alfie():
+    return render_template("movie_detail_Alfie.html")
+
+@app.route('/search/movie/twilight')
+def twilight():
+    return render_template("movie_detail_twilight.html")
 
 
 ###############################################################################
