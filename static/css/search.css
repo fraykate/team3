@@ -1,0 +1,34 @@
+#all-shows {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: space-around;
+  gap: 50px;
+  width: 80%;
+  margin: 200px auto;
+  justify-items: center;
+}
+
+.show {
+  height: 350px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: #0a2239;
+  border-radius: var(--radius);
+  box-shadow:
+    rgba(66, 84, 100, 0.48) 6px 2px 16px 0,
+    rgba(66, 84, 100, 0.2) 6px 2px 16px 0;
+}
+
+.show-name {
+  text-align: center;
+  padding: 10px;
+  line-height: 30px;
+}
+
+.show > img {
+  width: 100%;
+  height: 240px;
+}
+
