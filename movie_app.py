@@ -93,17 +93,17 @@ def login():
 # Movie detail page for titanic
 @app.route('/search/movie/titanic')
 def titanic():
-    return render_template("search.html")
+    return render_template("movie_detail_titanic.html")
 
 # Movie detail page for Alfie
 @app.route('/search/movie/alfie')
 def alfie():
-    return render_template("search.html")
+    return render_template("movie_detail_alfie.html")
 
 # Movie detail page for twilight
 @app.route('/search/movie/twilight')
 def twilight():
-    return render_template("search.html")
+    return render_template("movie_detail_twilight.html")
      
 
 ###############################################################################
