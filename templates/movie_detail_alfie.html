@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-    <title>Alfie</title>
-    <link rel="stylesheet" href="../static/css/myflaskapp.css">
-</head>
+    <head>
+        <title>Alfie</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/movie_detail_format.css') }}">
+    </head>
+    <body>
+        <div>
+            <a href="{{url_for('login')}}">Login/SignUp</a>
+            <hr>
+            <a href="{{url_for('user_profile')}}">Profile</a>
+            <hr>
+            <a href="">Return to Homepage</a>
+        </div>
 <body>
 <div>
-    <h3>Alfie<h3><br>
+    <h1>Alfie</h1>
 </div>
-        <hr><br>
+    <br><hr><br>
 <div>
-    Genre: ACtion
+    <h3>
+        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQM9YY9AbVVgoSidhtjMBQfHqIKCSThXIj2qKQ_GNXe2AeoxWWh" width="200" height="240" alt="movie-poster" class="movie-poster"/>
+    </h3>
 </div>
-<div>
-    Runtime: 60 Minutes
-</div>
-<div>
-    Release Year: 2018
+<div id="div-2">
+    <h3>
+        Genre: Action<br>
+        Runtime: 60 Minutes<br>
+        Release Year: 2018<br>
+    </h3>
 </div>
 
 </body>
 </html>
+    
+

@@ -90,6 +90,7 @@ def user_profile():
 @app.route('/login')
 def login():
     return 'login'
+
 # Movie detail page for titanic
 @app.route('/search/movie/titanic')
 def titanic():

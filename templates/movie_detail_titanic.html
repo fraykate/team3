@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-    <title>Titanic</title>
-    <link rel="stylesheet" href="../static/css/myflaskapp.css">
-</head>
+    <head>
+        <title>Titanic</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/movie_detail_format.css') }}">
+    </head>
+    <body>
+        <div>
+            <a href="{{url_for('login')}}">Login/SignUp</a>
+            <hr>
+            <a href="{{url_for('user_profile')}}">Profile</a>
+            <hr>
+            <a href="">Return to Homepage</a>
+        </div>
 <body>
 <div>
-    <h3>Titanic<h3>
-        <br>
+    <h1>Titanic</h1>
 </div>
     <br><hr><br>
 <div>
-    Genre: Action
+    <h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdPugWzSnX3TWCYO-KlF4f5VF2JeMp6VGdAi2lQTLzsqHq00dW" width="200" height="240" alt="movie-poster" class="movie-poster"/>
+    </h3>
 </div>
-<div>
-    Runtime: 60 Minutes
-</div>
-<div>
-    Release Year: 2018
+<div id="div-2">
+    <h3>
+        Genre: Action<br>
+        Runtime: 60 Minutes<br>
+        Release Year: 2018<br>
+    </h3>
 </div>
 
 </body>
 </html>
+
