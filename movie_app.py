@@ -62,12 +62,13 @@ def show_movie_profile():
 
 # reads database for corresponding user
 @app.route('/profile')
-def user_profile():
+def user_profile(user = None):
     fetch = "SELECT * FROM login" 
     c.execute(fetch)
     data = c.fetchall()
 
     file = "movie_app.db"
+    #should comment out below line for demo?
     user = "admin"
     conn = sqlite3.connect(file)
     cur = conn.cursor()
@@ -76,22 +77,22 @@ def user_profile():
     user_dislikes = []
     user_watched = []
     user_towatch = []
-    
-    for likesid in cur.execute("SELECT Likes FROM likes WHERE IDUser='"+ user +"';"):
-        #for like_movie_name in cur.execute("SELECT title FROM movies WHERE MovieID='" + likes + "';"):
-        user_likes.append(likesid) #, like_movie_name)
-    
-    for dislikesid in cur.execute("SELECT Dislikes FROM dislikes WHERE IDUser='"+ user +"';"):
-        user_dislikes.append(dislikesid)
-        
-    for watchedid in cur.execute("SELECT Watched FROM watched WHERE IDUser='"+ user +"';"):
-        user_watched.append(watchedid)
-        
-    for towatchid in cur.execute("SELECT ToWatch FROM to_watch WHERE IDUser='"+ user +"';"):
-        user_towatch.append(towatchid)
-        
+    if user != None:
+        for likesid in cur.execute("SELECT Likes FROM likes WHERE IDUser='"+ user +"';"):
+            #for like_movie_name in cur.execute("SELECT title FROM movies WHERE MovieID='" + likes + "';"):
+            user_likes.append(likesid) #, like_movie_name)
+
+        for dislikesid in cur.execute("SELECT Dislikes FROM dislikes WHERE IDUser='"+ user +"';"):
+            user_dislikes.append(dislikesid)
+
+        for watchedid in cur.execute("SELECT Watched FROM watched WHERE IDUser='"+ user +"';"):
+            user_watched.append(watchedid)
+
+        for towatchid in cur.execute("SELECT ToWatch FROM to_watch WHERE IDUser='"+ user +"';"):
+            user_towatch.append(towatchid)
+
     conn.close
-    return render_template('userprofile.html', user_likes = user_likes, user_dislikes = user_dislikes, user_watched = user_watched, user_towatch = user_towatch, data = data)
+    return render_template('userprofile.html', user_likes = user_likes, user_dislikes = user_dislikes, user_watched = user_watched, user_towatch = user_towatch, user = user, data = data)
 
 
 @app.route('/login')
