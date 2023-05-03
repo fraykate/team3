@@ -16,23 +16,28 @@ and to watch movies corresponding to username
         }
     </style>
 </head>
+    
+{% if user %}
 <body>
     <!--Upper navigation bar-->
     <div id="nav-div">
         <a href="{{url_for('login')}}">Login</a> | <a href="{{url_for('signup')}}">SignUp</a> | <a href="{{url_for('user_profile')}}">Profile</a> | <a href="../">Return to Homepage</a>
     </div>
     <br>
-    <h1>{{ data[0][0] }}</h1>
+    <h1>{{user}}</h1>
     <br><br>
     
     <div class="row">
-        <div id="to_watch" class="column" style="background-color:#bbb;">
+        <div id="to_watch" class="column">
+            <div id = "col">
             <h2>Watch List</h2>
             <p>
             <ul>
+                
                 {% if user_watched %}
                 {% for item in user_watched %}
-                <li>{{item[0]}}
+                <li>
+                    <a href="search/movie/{{item[0]}}">{{item[0]}}</a>
                     <!--
                     <button type="button">Watched</button>
                     <button type="button">Like</button>
@@ -46,14 +51,18 @@ and to watch movies corresponding to username
                 {% endif %}
             </ul>
             </p>
+            </div>
         </div>
-        <div id="liked_movies" class="column" style="background-color:#ccc;">
+
+        <div id="liked_movies" class="column">
+            <div id = "col">
             <h2>Liked Movies</h2>
             <p>
             <ul>
                 {% if user_likes %}
                 {% for item in user_likes %}
-                <li>{{item[0]}}
+                <li>
+                    <a href="search/movie/{{item[0]}}">{{item[0]}}</a>
                     <!--
                     <button type="button">Dislike</button>
                     <button type="button">Remove</button>
@@ -63,16 +72,20 @@ and to watch movies corresponding to username
                 {% else %}
                 <p>None</p>
                 {% endif %}
-            </ul>      
+            </ul>
+                
             </p>
+            </div>
         </div>
-        <div id="disliked_movies" class="column" style="background-color:#bbb;">
+        <div id="disliked_movies" class="column">
+            <div id = "col">
             <h2>Disliked Movies</h2>
             <p>
             <ul>
                 {% if user_dislikes %}
                 {% for item in user_dislikes %}
-                <li>{{item[0]}}
+                <li>
+                    <a href="search/movie/{{item[0]}}">{{item[0]}}</a>
                     <!--
                     <button type="button">Like</button>
                     <button type="button">Remove</button>
@@ -84,16 +97,20 @@ and to watch movies corresponding to username
                 {% endif %}
             </ul>
             </p>
+            </div>
         </div>
     </div>
+    
     <br><br>
-    <div id="watched_movies" style="background-color:#aaa;">
+    <div id="watched_movies" style="background-color:#ffffff00;">
         <h2>Watched Movies</h2>
         <p>
+        
             <ul>
                 {% if user_watched %}
                 {% for item in user_watched %}
-                <li>{{item[0]}}
+                <li>
+                    <a href="search/movie/{{item[0]}}">{{item[0]}}</a>
                     <!--
                     <button type="button">Like</button>
                     <button type="button">Dislike</button>
@@ -105,7 +122,22 @@ and to watch movies corresponding to username
                 <p>None</p>
                 {% endif %}
             </ul>
+        
         </p>
+
     </div>
 </body>
+{% else %}
+<body>
+    <div>
+        <a href="login">Login/SignUp</a>
+        <a href="profile">Profile</a>
+        <a href="">Return to Homepage</a>
+    </div>
+    <br>
+    <h1><a href="login">Not logged in, click here to login</a></h1>
+    <br>
+        
+</body>
+{% endif %}
 </html>
