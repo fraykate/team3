@@ -32,12 +32,11 @@
         <!-- Movie Description-->
         <div id="div-desc">
             <h3>
-                Language: {{ data[0][1] }}<br><br>
-                Title Type: {{ data[0][2] }}<br><br>
-                Genres: {{ data[0][9] }}<br><br>
-                Runtime: {{ data[0][8] }} Minutes<br><br>
-                Release Year: {{ data[0][6] }}<br><br>
-                Average Rating: {{ data[0][10] }}<br><br>
+                Language: {{ data[0][1] }}<br>
+                Genres: {{ data[0][9] }}<br>
+                Runtime: {{ data[0][8] }} Minutes<br>
+                Release Year: {{ data[0][6] }}<br>
+                Average Rating: {{ data[0][10] }}<br>
             </h3>
         </div>
         <!-- Movie Blurb/Review-->
@@ -45,6 +44,12 @@
             <h3>
                 "{{ data[0][14] }}"
             </h3>
+            <br>
+            <br>
+        </div>
+        <!-- Movie Trailer-->
+        <div id="div-trailer">
+        <iframe width="850" height="400" src="{{data[0][15]}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
 </body>

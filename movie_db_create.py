@@ -32,7 +32,7 @@ def create(dbname):
     c.execute("CREATE TABLE titleBasics(tconst VARCHAR, language VARCHAR, titleType VARCHAR, primaryTitle VARCHAR, originalTitle VARCHAR, isAdult NUMERIC, startYear NUMERIC, endYear NUMERIC, runtimeMinutes NUMERIC, genres VARHAR, averageRating NUMERIC,numVotes NUMERIC);")
     
     # Create titleDetails table
-    c.execute("CREATE TABLE titleDetails (tconst VARCHAR, posterUrl VARCHAR, review VARCHAR);")
+    c.execute("CREATE TABLE titleDetails (tconst VARCHAR, posterUrl VARCHAR, review VARCHAR, trailer VARCHAR);")
 
     #KF added Likes and IDUser - wasn't working until I added this but maybe there's something else that was supposed to happen?
     # Create likes table
@@ -80,7 +80,7 @@ def fill(dbname):
     contents = csv.reader(file)
     
     # SQL query to insert data into the details table
-    insert_records = "INSERT INTO titleDetails (tconst, posterUrl, review) VALUES(?, ?, ?)" 
+    insert_records = "INSERT INTO titleDetails (tconst, posterUrl, review, trailer) VALUES(?, ?, ?, ?)" 
     # Importing the contents of the file into the table
     c.executemany(insert_records, contents)
     

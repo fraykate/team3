@@ -46,11 +46,12 @@ body{
     float:left
 }
 
-#div-likes{
+#div-trailer{
     border: 20px;
-    width: 25%;
+    padding-left: 90px;
+    /* width: 25%; */
     background-color:transparent;
-    margin-top: 200px;
+    margin-top: 20px;
     float:left
 }
 

@@ -63,6 +63,10 @@ def show_movie_profile():
 # reads database for corresponding user
 @app.route('/profile')
 def user_profile():
+    fetch = "SELECT * FROM login" 
+    c.execute(fetch)
+    data = c.fetchall()
+
     file = "movie_app.db"
     user = "admin"
     conn = sqlite3.connect(file)
@@ -77,7 +81,6 @@ def user_profile():
         #for like_movie_name in cur.execute("SELECT title FROM movies WHERE MovieID='" + likes + "';"):
         user_likes.append(likesid) #, like_movie_name)
     
-    #TODO undo this when done
     for dislikesid in cur.execute("SELECT Dislikes FROM dislikes WHERE IDUser='"+ user +"';"):
         user_dislikes.append(dislikesid)
         
@@ -88,7 +91,7 @@ def user_profile():
         user_towatch.append(towatchid)
         
     conn.close
-    return render_template('userprofile.html', user_likes = user_likes, user_dislikes = user_dislikes, user_watched = user_watched, user_towatch = user_towatch)
+    return render_template('userprofile.html', user_likes = user_likes, user_dislikes = user_dislikes, user_watched = user_watched, user_towatch = user_towatch, data = data)
 
 
 @app.route('/login')
