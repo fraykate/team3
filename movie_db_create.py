@@ -29,8 +29,8 @@ def create(dbname):
     c = conn.cursor()
 
     # Create the titleBasics table
-    c.execute("CREATE TABLE titleBasics(tconst VARCHAR PRIMARY KEY, titleType VARCHAR, primaryTitle VARCHAR, originalTitle VARCHAR, isAdult NUMERIC, startYear NUMERIC, endYear NUMERIC, runtimeMinutes NUMERIC, genre1 TEXT DEFAULT 'abc', genre2 TEXT DEFAULT 'abc', genre3 TEXT DEFAULT 'abc');")
-
+    c.execute("CREATE TABLE titleBasics(tconst VARCHAR, language VARCHAR, titleType VARCHAR, primaryTitle VARCHAR, originalTitle VARCHAR, isAdult NUMERIC, startYear NUMERIC, endYear NUMERIC, runtimeMinutes NUMERIC, genres VARHAR, averageRating NUMERIC,numVotes NUMERIC);")
+    
     # Create likes table
     c.execute("CREATE TABLE likes (username VARCHAR, movieid VARCHAR);")
 
@@ -62,7 +62,7 @@ def fill(dbname):
     
     # TODO - Part of the issue with varying columns in csv file, still a WIP
     # SQL query to insert data into the person table
-    insert_records = "INSERT INTO titleBasics (tconst, titleType, primaryTitle, originalTitle, isAdult, startYear, endYear, runtimeMinutes, genre1) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)" 
+    insert_records = "INSERT INTO titleBasics (tconst, language, titleType, primaryTitle, originalTitle, isAdult, startYear, endYear, runtimeMinutes, genres, averageRating, numVotes) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)" 
     # Importing the contents of the file into the table
     c.executemany(insert_records, contents)
     

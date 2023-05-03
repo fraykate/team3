@@ -4,32 +4,44 @@
     <head>
         <title>{{moviename}}</title>
         <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/movie_detail_format.css') }}">
+        <script src="../static/search.js"></script>
     </head>
     <body>
+        <!--Upper navigation bar-->
         <div>
             <a href="{{url_for('login')}}">Login/SignUp</a>
-            <hr>
             <a href="{{url_for('user_profile')}}">Profile</a>
-            <hr>
-            <a href="">Return to Homepage</a>
+            <a href="../">Return to Homepage</a>
         </div>
-<body>
-<div>
-    <h1>{{ moviename }}</h1>
-</div>
-    <br><hr><br>
-<div>
-    <h3>
-        <img src="https://m.media-amazon.com/images/I/811lT7khIrL._SY445_.jpg"/>
-    </h3>
-</div>
-<div id="div-2">
-    <h3>
-        Genre: {{ data[0][8] }}<br>
-        Runtime: {{ data[0][7] }} Minutes<br>
-        Release Year: {{ data[0][5] }}<br>
-    </h3>
-</div>
+       
+        
+        <!-- Movie Title-->
+        <div id="div-title">
+            <h1>{{ moviename }}</h1>
+        </div>
+            <hr><br>
+        <!-- Movie Poster-->
+        <div id="div-poster">
+            <h3>
+                <img src="https://m.media-amazon.com/images/I/811lT7khIrL._SY445_.jpg"/>
+            </h3>
+        </div>
+        <!-- Movie Likes-->
+        <div id="div-likes">
+            <button onclick="displaycount1()"> <span style="color:red; float:left;">&#x2764; love it</span> </button><br>
+        </div>
+        <!-- Movie Description-->
+        <div id="div-desc">
+            <h3>
+                Language: {{ data[0][1] }}<br><br>
+                Title Type: {{ data[0][2] }}<br><br>
+                Genres: {{ data[0][9] }}<br><br>
+                Runtime: {{ data[0][8] }} Minutes<br><br>
+                Release Year: {{ data[0][6] }}<br><br>
+                Average Rating: {{ data[0][10] }}<br><br>
+            </h3>
+        </div>
+        <!-- Movie Blurb/Review-->
 
 </body>
 </html>

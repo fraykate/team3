@@ -33,7 +33,7 @@ c = conn.cursor()
 
 @app.route('/')  
 def homepage():
-    fetch = "SELECT genre1 FROM titleBasics LIMIT 4"
+    fetch = "SELECT DISTINCT(genres) FROM titleBasics LIMIT 4"
     c.execute(fetch)
     data = c.fetchall()
     return render_template('whatchawatchin.html', data=data)
