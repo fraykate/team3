@@ -29,7 +29,7 @@ c = conn.cursor()
 
 # Insert the wrapper for handling PROXY when using csel.io virtual machine
 # Calling this routine will have no effect if running on local machine
-# prefix.use_PrefixMiddleware(app)   
+prefix.use_PrefixMiddleware(app)   
 
 @app.route('/')  
 def homepage():
@@ -77,13 +77,14 @@ def user_profile():
         #for like_movie_name in cur.execute("SELECT title FROM movies WHERE MovieID='" + likes + "';"):
         user_likes.append(likesid) #, like_movie_name)
     
+    #TODO undo this when done
     for dislikesid in cur.execute("SELECT Dislikes FROM dislikes WHERE IDUser='"+ user +"';"):
         user_dislikes.append(dislikesid)
         
     for watchedid in cur.execute("SELECT Watched FROM watched WHERE IDUser='"+ user +"';"):
         user_watched.append(watchedid)
         
-    for towatchid in cur.execute("SELECT ToWatch FROM toWatch WHERE IDUser='"+ user +"';"):
+    for towatchid in cur.execute("SELECT ToWatch FROM to_watch WHERE IDUser='"+ user +"';"):
         user_towatch.append(towatchid)
         
     conn.close
@@ -129,7 +130,7 @@ def titanic():
 # Movie detail page for Alfie
 @app.route('/search/movie/alfie')
 def alfie():
-    return render_template("movie_detail.html")
+    return render_template("movie_detail_alfie.html")
 
 # Movie detail page for twilight
 @app.route('/search/movie/twilight')

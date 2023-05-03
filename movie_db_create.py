@@ -34,17 +34,21 @@ def create(dbname):
     # Create titleDetails table
     c.execute("CREATE TABLE titleDetails (tconst VARCHAR, posterUrl VARCHAR, review VARCHAR);")
 
+    #KF added Likes and IDUser - wasn't working until I added this but maybe there's something else that was supposed to happen?
     # Create likes table
-    c.execute("CREATE TABLE likes (username VARCHAR, movieid VARCHAR);")
+    c.execute("CREATE TABLE likes (username VARCHAR, movieid VARCHAR, Likes NUMERIC, IDUser NUMERIC);")
 
+    #KF added Dislikes and IDUser - wasn't working until I added this but maybe there's something else that was supposed to happen?
     # Create dislikes table
-    c.execute("CREATE TABLE dislikes (username VARCHAR, movieid VARCHAR);")
+    c.execute("CREATE TABLE dislikes (username VARCHAR, movieid VARCHAR, Dislikes NUMERIC, IDUser NUMERIC);")
 
+    #KF added Watched and IDUser - wasn't working until I added this but maybe there's something else that was supposed to happen?
     # Create watched table
-    c.execute("CREATE TABLE watched (username VARCHAR, movieid VARCHAR);")
+    c.execute("CREATE TABLE watched (username VARCHAR, movieid VARCHAR, Watched NUMERIC, IDUser NUMERIC);")
 
+    #KF added ToWatch and IDUser - wasn't working until I added this but maybe there's something else that was supposed to happen?
     # Create to_watch table
-    c.execute("CREATE TABLE to_watch (username VARCHAR, movieid VARCHAR);")
+    c.execute("CREATE TABLE to_watch (username VARCHAR, movieid VARCHAR, ToWatch NUMERIC, IDUser NUMERIC);")
 
     # Create Login table
     c.execute("CREATE TABLE login (username VARCHAR, password VARCHAR)")

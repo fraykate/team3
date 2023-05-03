@@ -9,14 +9,14 @@
     
     <body>
         <!--Upper navigation bar-->
-        <div>
-            <a href="{{url_for('login')}}">Login/SignUp</a> | <a href="{{url_for('user_profile')}}">Profile</a> | <a href="../../">Return to Homepage</a>
+        <div id="nav-div">
+            <a href="{{url_for('login')}}">Login</a> | <a href="{{url_for('signup')}}">SignUp</a> | <a href="{{url_for('user_profile')}}">Profile</a> | <a href="../../">Return to Homepage</a>
         </div>
        
         
         <!-- Movie Title-->
         <div id="div-title">
-            <h1>{{ moviename }} ({{ data[0][6] }})</h1>
+            <h1>{{ moviename }} ({{ data[0][6] }}) </h1>
         </div>
             <hr><br>
         <!-- Movie Poster-->

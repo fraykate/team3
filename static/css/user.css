@@ -12,10 +12,21 @@ h2 {
     color: white;
 }
 body{
-    background-image: url('Public_domain_theatre.jpg'); background-size:cover;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
+  url('Public_domain_theatre.jpg'); background-size:cover;
+}
+#nav-div{
+  font-size: 25px;
+  border: 20px;
+  width: 100%;
+  /* background-color:rgb(246, 250, 247); */
+  background-color: transparent;
+  margin-top: 50px;
+  padding: 30px;
+  color: black
 }
 div {
-    font-family: Arial;
+    /* font-family: Arial; */
     font-size: 20;
     color: white;
 }

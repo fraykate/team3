@@ -4,7 +4,7 @@ h1{
     color:rgb(180, 46, 201);  
     position:absolute; 
     left:45%; 
-    top:15%
+    top:15%;
 }
 
 body{
@@ -14,14 +14,27 @@ body{
 
 
 
-div{
+#nav-div{
+    font-size: 24px;
     border: 20px;
     width: 100%;
     /* background-color:rgb(246, 250, 247); */
     background-color: transparent;
     margin-top: 50px;
     padding: 30px;
+    color: black
+  }
+
+#div-title{
+    border: 20px;
+    width: 100%;
+    /* background-color:rgb(246, 250, 247); */
+    background-color: transparent;
+    margin-top: 20px;
+    margin-bottom: 120px;
+    /* padding: 30px; */
 }
+
 
 #div-poster{
     border: 20px;

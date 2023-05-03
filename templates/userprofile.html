@@ -17,10 +17,9 @@ and to watch movies corresponding to username
     </style>
 </head>
 <body>
-    <div>
-        <a href="login">Login/SignUp</a>
-        <a href="profile">Profile</a>
-        <a href="">Return to Homepage</a>
+    <!--Upper navigation bar-->
+    <div id="nav-div">
+        <a href="{{url_for('login')}}">Login</a> | <a href="{{url_for('signup')}}">SignUp</a> | <a href="{{url_for('user_profile')}}">Profile</a> | <a href="../">Return to Homepage</a>
     </div>
     <br>
     <h1>-Username Here-</h1>

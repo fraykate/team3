@@ -7,7 +7,7 @@ Code update 5/2/23, Chris -> Updated links in div-->
 
 
 <head>
-    <title>watchawatchin</title>
+    <title>Search</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/general_format.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/search.css') }}">
     
@@ -15,12 +15,10 @@ Code update 5/2/23, Chris -> Updated links in div-->
 </head>
 <body>
     <!--Upper navigation bar-->
-    <div>
-        <a href="{{url_for('login')}}">Login/SignUp</a>
-        <a href="{{url_for('user_profile')}}">Profile</a>
-        <a href="../">Return to Homepage</a>
+   <!--Upper navigation bar-->
+   <div id="nav-div">
+        <a href="{{url_for('login')}}">Login</a> | <a href="{{url_for('signup')}}">SignUp</a> | <a href="{{url_for('user_profile')}}">Profile</a> | <a href="../">Return to Homepage</a>
     </div>
-    <div>
     <!-- Search bar and submit button-->
     <h1>
         <form action="movie/"  method="Post">
@@ -30,7 +28,7 @@ Code update 5/2/23, Chris -> Updated links in div-->
     </h1>
     </div>
     
-    <div style="padding-top:30px;">
+    <!-- <div style="padding-top:30px;"> -->
         
         <script>
         var count1 =(function () {
