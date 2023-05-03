@@ -51,7 +51,7 @@ def show_movie_profile():
     #Get user data from POST
     moviename = request.form['movie_name']
     #Query db using title provided by user
-    fetch = "SELECT * FROM titleBasics WHERE primaryTitle = '" + moviename + "'" 
+    fetch = "SELECT * FROM titleBasics LEFT JOIN titleDetails ON titleBasics.tconst = titleDetails.tconst WHERE primaryTitle = '" + moviename + "'" 
     c.execute(fetch)
     data = c.fetchall()
     #If movie not found, populate that template 

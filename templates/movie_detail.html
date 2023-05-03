@@ -6,30 +6,29 @@
         <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/movie_detail_format.css') }}">
         <script src="../static/search.js"></script>
     </head>
+    
     <body>
         <!--Upper navigation bar-->
         <div>
-            <a href="{{url_for('login')}}">Login/SignUp</a>
-            <a href="{{url_for('user_profile')}}">Profile</a>
-            <a href="../">Return to Homepage</a>
+            <a href="{{url_for('login')}}">Login/SignUp</a> | <a href="{{url_for('user_profile')}}">Profile</a> | <a href="../../">Return to Homepage</a>
         </div>
        
         
         <!-- Movie Title-->
         <div id="div-title">
-            <h1>{{ moviename }}</h1>
+            <h1>{{ moviename }} ({{ data[0][6] }})</h1>
         </div>
             <hr><br>
         <!-- Movie Poster-->
         <div id="div-poster">
             <h3>
-                <img src="https://m.media-amazon.com/images/I/811lT7khIrL._SY445_.jpg"/>
+                <img src="{{ data[0][13] }}" width="100%" height="100%"/>
             </h3>
         </div>
         <!-- Movie Likes-->
-        <div id="div-likes">
+        <!-- <div id="div-likes">
             <button onclick="displaycount1()"> <span style="color:red; float:left;">&#x2764; love it</span> </button><br>
-        </div>
+        </div> -->
         <!-- Movie Description-->
         <div id="div-desc">
             <h3>
@@ -42,6 +41,11 @@
             </h3>
         </div>
         <!-- Movie Blurb/Review-->
+        <div id="div-desc">
+            <h3>
+                "{{ data[0][14] }}"
+            </h3>
+        </div>
 
 </body>
 </html>

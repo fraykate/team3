@@ -31,6 +31,9 @@ def create(dbname):
     # Create the titleBasics table
     c.execute("CREATE TABLE titleBasics(tconst VARCHAR, language VARCHAR, titleType VARCHAR, primaryTitle VARCHAR, originalTitle VARCHAR, isAdult NUMERIC, startYear NUMERIC, endYear NUMERIC, runtimeMinutes NUMERIC, genres VARHAR, averageRating NUMERIC,numVotes NUMERIC);")
     
+    # Create titleDetails table
+    c.execute("CREATE TABLE titleDetails (tconst VARCHAR, posterUrl VARCHAR, review VARCHAR);")
+
     # Create likes table
     c.execute("CREATE TABLE likes (username VARCHAR, movieid VARCHAR);")
 
@@ -56,13 +59,24 @@ def fill(dbname):
     conn = sqlite3.connect(dbname) 
     c = conn.cursor()
     
-    # FILL THE titleBasics TABLE (right now it's pointing at a dummy file)
+    # FILL THE titleBasics TABLE
     file = open('data/movies.csv')
     contents = csv.reader(file)
     
-    # TODO - Part of the issue with varying columns in csv file, still a WIP
-    # SQL query to insert data into the person table
+    # SQL query to insert data into the basics table
     insert_records = "INSERT INTO titleBasics (tconst, language, titleType, primaryTitle, originalTitle, isAdult, startYear, endYear, runtimeMinutes, genres, averageRating, numVotes) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)" 
+    # Importing the contents of the file into the table
+    c.executemany(insert_records, contents)
+    
+    # close file
+    file.close()
+
+    # FILL THE titleDetails TABLE
+    file = open('data/movies_detail.csv')
+    contents = csv.reader(file)
+    
+    # SQL query to insert data into the details table
+    insert_records = "INSERT INTO titleDetails (tconst, posterUrl, review) VALUES(?, ?, ?)" 
     # Importing the contents of the file into the table
     c.executemany(insert_records, contents)
     

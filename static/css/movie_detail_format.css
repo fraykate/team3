@@ -1,38 +1,41 @@
 h1{
     font-style: italic;
-    font-size: +50px;
-    color:rgb(255, 0, 0); 
+    font-size: +60px;
+    color:rgb(180, 46, 201);  
     position:absolute; 
     left:45%; 
     top:15%
 }
 
 body{
-    
-    background-image: url('Public_domain_theatre.jpg'); background-size:cover; background-blend-mode: lighten;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
+    url('Public_domain_theatre.jpg'); background-size:cover;
 }
 
 
 
 div{
     border: 20px;
-    width: 50px;
+    width: 100%;
     /* background-color:rgb(246, 250, 247); */
     background-color: transparent;
     margin-top: 50px;
+    padding: 30px;
 }
 
 #div-poster{
     border: 20px;
-    width: 25vw;
+    width: 25%;
     background-color:transparent;
     margin-top: 10px;
+    margin-left: 10px;
+    padding: 15pm;
     float:left
 }
 
 #div-likes{
     border: 20px;
-    width: 10vw;
+    width: 25%;
     background-color:transparent;
     margin-top: 200px;
     float:left
@@ -41,11 +44,11 @@ div{
 #div-desc{
     border: 20px;
     border-radius: 25% 10%;
-    width: 20vw;
-    background-color:rgb(107, 146, 171);
+    width: 25%;
+    background-color:rgb(157, 223, 191);
     margin-top: 30px;
     margin-left: 10px;
-    padding: 10px 50px 20px;
+    padding: 15px 50px 20px;
     float:left
 }
 
