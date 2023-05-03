@@ -160,8 +160,66 @@ def isMovieWatchedByUser(username, database = dbname):
 #################################
 
 # Function: addUser
-def addWatched(username, password, database = dbname):
-    addGeneric("login", username, password, database)
+# Description: Adds a new user to the database
+# Parameters: username, password
+# Returns: true if user was created, false otherwise
+def addUser(username, password, database = dbname):
+
+    ## Before we can add the user we need to do some data validation
+    ## Username requirements: Minimum of 3 characters with no spaces. Usernames must also be unique. 
+    ## Password requirements: Minimum of 8 characters with no space
+    
+    ## Innocent until proven guilty
+    valid_data = True
+
+    if (len(username) < 3):
+        valid_data = False
+
+    if (' ' in username):
+        valid_data = False
+    
+    if (len(password) < 8):
+        valid_data = False
+
+    if (' ' in password):
+        valid_data = False
+
+    ## Connect to database
+    conn = sqlite3.connect(database)
+    c = conn.cursor()
+
+    c.execute('SELECT count(*) FROM login WHERE username = (?)', (username,))    
+    ret = c.fetchall()
+
+    if ret[0][0]:
+        valid_data = False
+
+    if valid_data:
+        c.execute('INSERT INTO login (username, password) VALUES (?,?)', (username, password))
+
+    conn.commit()
+    conn.close()  
+
+    return valid_data
+
+def loginUser(username, password, database = dbname):
+
+    ## Connect to database
+    conn = sqlite3.connect(database)
+    c = conn.cursor()
+    login_result = False
+
+    c.execute('SELECT count(*) FROM login WHERE username = (?) AND password = (?)' , (username, password))    
+    ret = c.fetchall()
+
+    if ret[0][0]:
+        login_result = True
+
+    conn.commit()
+    conn.close()  
+
+    return login_result
+
 
 ## The following code is reused by other functions.
 ## TODO change to scope of these functions so that they 

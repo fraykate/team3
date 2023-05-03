@@ -15,6 +15,9 @@ import prefix
 import sqlite3
 from flask import Flask, url_for, render_template, request
 from markupsafe import escape
+import sys
+sys.path.insert(1, './movie_db_api/')
+import movie_db_api as dbAPI
 
 
 # create app to use in this Flask application
@@ -87,10 +90,36 @@ def user_profile():
     return render_template('userprofile.html', user_likes = user_likes, user_dislikes = user_dislikes, user_watched = user_watched, user_towatch = user_towatch)
 
 
-#Login placeholder 
 @app.route('/login')
 def login():
-    return 'login'
+    return render_template("login.html")
+
+@app.route('/login_attempt', methods=['POST', 'GET'])
+def login_attempt():
+    username = request.form['username']
+    password = request.form['password']
+    ret = dbAPI.loginUser(username, password, "./movie_app.db")
+    if ret:
+        f = open("login.txt", "w")
+        f.write(username)
+        f.close()
+        return render_template("login_user_true.html", username=username)
+    else:
+        return render_template("login_user_failed.html", username=username)
+
+@app.route('/signup')
+def signup():
+    return render_template("signup.html")
+
+@app.route('/attempt', methods=['POST', 'GET'])
+def attempt():
+    username = request.form['username']
+    password = request.form['password']
+    ret = dbAPI.addUser(username, password, "./movie_app.db")
+    if ret:
+        return render_template("create_user_true.html", username=username)
+    else:
+        return render_template("create_user_failed.html", username=username)
 
 # Movie detail page for titanic
 @app.route('/search/movie/titanic')
