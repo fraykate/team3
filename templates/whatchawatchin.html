@@ -1,40 +1,46 @@
 <!DOCTYPE html>
-<!-- Note that mystyle.css and the background image must be downloaded
-to show the whole page-->
+<!-- Home page for the website, links to other pages -->
+
+<!-- Documentation updated 5/2/23, Chris 
+Code update 5/2/23, Chris -> Updated Button names-->
 <head>
     <title>watchawatchin</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/general_format.css') }}">
 </head>
+<!--Top navigation bar-->
 <body>
+    <!--Build urls for login and user pages-->
     <div>
         <a href="{{url_for('login')}}">Login/SignUp</a>
         <a href="{{url_for('user_profile')}}">Profile</a>
         <a href="">Return to Homepage</a>
     </div>
     <h1>whatchawatchin?</h1>
+    <!-- Button bring you to search page-->
     <table>
         <th>
             <form action= "{{url_for('search_movie')}}">
-                <button>{{ data[0][0] }}</button>
+                <button>Action</button>
             </form>
             
         </th>
         <th>
             <form action= "{{url_for('search_movie')}}">
-                <button>{{ data[1][0] }}</button>
+                <button> Comedy </button>
             </form>
         </th>
         <th>
             <form action= "{{url_for('search_movie')}}">
-                <button>{{ data[2][0] }}</button>
+                <button>Drama</button>
             </form>
         </th>
         <th>
             <form action= "{{url_for('search_movie')}}">
-                <button>{{ data[3][0] }}</button>
+                <button>Romance</button>
         </th>
         <th>
-            Placeholder
+            <form action= "{{url_for('search_movie')}}">
+                <button>Thriller</button>
         </th>
     </table>
 </body>
