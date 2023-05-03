@@ -129,7 +129,7 @@ def titanic():
 # Movie detail page for Alfie
 @app.route('/search/movie/alfie')
 def alfie():
-    return render_template("movie_detail_alfie.html")
+    return render_template("movie_detail.html")
 
 # Movie detail page for twilight
 @app.route('/search/movie/twilight')
