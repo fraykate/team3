@@ -1,25 +1,27 @@
 <!DOCTYPE html>
-<!-- Note that mystyle.css and the background image must be downloaded
-to show the whole page-->
-<!-- Demo page for exploring passing variable into route-->
+<!-- This is a template for the search page.  The page sends user input to the
+flask server via a Post form action.-->
+
+<!-- Documentation updated 5/2/23, Chris 
+Code update 5/2/23, Chris -> Updated links in div-->
+
+
 <head>
     <title>watchawatchin</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/general_format.css') }}">
-    
-    
-    
-    
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/search.css') }}">
     
     
 </head>
 <body>
+    <!--Upper navigation bar-->
     <div>
-        <a href="login">Login/SignUp</a>
-        <a href="profile">Profile</a>
+        <a href="{{url_for('login')}}">Login/SignUp</a>
+        <a href="{{url_for('user_profile')}}">Profile</a>
         <a href="../">Return to Homepage</a>
     </div>
     <div>
+    <!-- Search bar and submit button-->
     <h1>
         <form action="movie/"  method="Post">
           <input type="text" placeholder="Search.." name="movie_name">
