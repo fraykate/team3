@@ -30,18 +30,29 @@ div {
     font-size: 20;
     color: white;
 }
-.column {
-  float: left;
-  width:33%;
-  padding: 10px;
-    
-}
-.column:before {
-  padding: 5px;
-}
 
 .row:after {
   content: "";
   display: table;
   clear: both;
+}
+
+.row {
+    border: 0px solid #fff;
+    padding: 20px;
+}
+
+.column {
+    width: 33.33%;
+    float: left;
+    padding: 3%;
+    border: 1px solid #fff;
+}  
+
+.col {
+    background-color:#aaaaaa50;
+}
+#watched_movies {
+    padding: 20px;
+    border: 1px solid #fff;
 }
