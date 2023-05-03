@@ -8,6 +8,7 @@
 # $ flask run --debug
 
 # Contributing Authors: Kate Fray
+#                       Chris Lescinskas 
 ##############################################################
 
 import prefix
@@ -36,21 +37,21 @@ def homepage():
 
 
 
-#This is meant to be a dummy page to explore passing variable into route
-#Eventually this will be replaced by genre 
+#Populates the searh page
 @app.route('/search/')
 def search_movie():
     return render_template("search.html")
 
-
+#Receive user input from search page via POST
 @app.route('/search/movie/', methods=['POST', 'GET'])
 def show_movie_profile():
+    #Get user data from POST
     moviename = request.form['movie_name']
-    ## How do we handle movies that aren't in databse?
-    ## How do we handle movies with the same name?
+    #Query db using title provided by user
     fetch = "SELECT * FROM titleBasics WHERE primaryTitle = '" + moviename + "'" 
     c.execute(fetch)
     data = c.fetchall()
+    #If movie not found, populate that template 
     if len(data) == 0:
         return render_template("movie_not_found.html")
     else:
