@@ -27,6 +27,7 @@
   - Making our CSS and HTML more reponsive for viewing on various hardware.
 * Any known problems (bugs, issues):
    - Links from Search page to Alfie and Titanic navigate to old HTML formatting.
+   - Search is case and character sensitive
 
 ### List your public hosting site and make sure that it is available
 * https://whatchawatchin.onrender.com/
