@@ -69,9 +69,16 @@ def user_profile(user = None):
 
     file = "movie_app.db"
     #should comment out below line for demo?
-    user = "admin"
+    #user = "admin"
     conn = sqlite3.connect(file)
     cur = conn.cursor()
+    
+    try: 
+        with open('login.txt') as f:
+            lines = f.readlines()
+            user = lines[0]
+    except:
+        print("user not logged in or file not found")
     
     user_likes = []
     user_dislikes = []
