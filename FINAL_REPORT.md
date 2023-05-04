@@ -18,8 +18,12 @@
 
 ### Final Status Report
 * What you completed
+  - Web page layouts
+  - Create user and login ability
+  - User profile displaying user information
 * What you were in the middle of implementing:
   - Currently the movie detail page only displays trailers and blurbs for Shrek, Alfie and Twilight - was building out the movieDetail dataset.
+  - More stable user login tracker
 * What you had planned for the future:
   - Adding likes, dislikes and watched to movie detail page.
   - Adding dislikes and watched to search page.
