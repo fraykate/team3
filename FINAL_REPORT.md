@@ -10,9 +10,6 @@
 ### Project tracker link (Instructor can access)
 * https://app.asana.com/0/1203900098272076/board
 
-### Link to 5 minute video: a demo for a potential customer (could be same one you used in the presentation)
-* TODO
-
 ### Version control repository link (make sure the instructor(s) have access)
 * https://github.com/fraykate/team3
 
