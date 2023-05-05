@@ -41,7 +41,7 @@
 ### Demo Recording (Use your Colorado Edu address to access):
 * https://drive.google.com/file/d/1tEj9hPJ3G8pM1vIqkF2ll3BKOG7OMncX/view?usp=sharing 
 
-## Source Documentation:
+### Source Documentation:
 * Our documenation is included in our source files in headers and inline comments
 * Our demo recording serves as an end-user tutorial on how to use and interact with the site
 
