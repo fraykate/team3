@@ -35,18 +35,15 @@
    - Links from Search page to Alfie and Titanic navigate to old HTML formatting.
    - Search is case and character sensitive
 
-### List your public hosting site and make sure that it is available
+### Public site:
 * https://whatchawatchin.onrender.com/
 
-## Make sure that your repository has the following files committed to remote repository:
-* README.md - yes
-* WEEKLY_STATUS.md - yes
-* PAGE_TESTING.md - yes
-* SQL_TESTING.md - yes
-* FINAL_REPORT.md - yes
-* Project presentation files from Milestone 5 - yes
-* Video of demo - TODO
-* Source code - yes
-* Test cases - yes
-* Source documentation, and auto-doc files - TODO
-* Link to Public Deployment Site (Heroku or similar) - yes
+### Video Recording (Use your Colorado Edu address to access):
+* https://drive.google.com/file/d/1tEj9hPJ3G8pM1vIqkF2ll3BKOG7OMncX/view?usp=sharing 
+
+### Presentation Deck
+* https://docs.google.com/presentation/d/1vaeuDLjXv2Sc_1F1L33fn3rjOlJZNEvo/edit#slide=id.p1
+
+## Attribution:
+* We leveraged a lot of the labs and tutorials from CSPB 3308
+* [Render Flask Tutorial](https://render.com/docs/deploy-flask)
